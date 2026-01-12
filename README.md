@@ -29,11 +29,6 @@ The program is divided into phases with logical progression: prerequisites build
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
 they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
 
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order.
-
-- We recommend doing all courses in **Core**, only skipping a course when you are certain that you've already learned the material previously.
-- For simplicity, we recommend working through courses (especially Core) in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
-- The courses in the Advanced section are electives. Choose one track to specialize in and complete all the courses listed under it.
 
 **[How to contribute](/CONTRIBUTING.html)**
 
@@ -45,69 +40,121 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
   - [r/LibraryScience](https://www.reddit.com/r/LibraryScience/)
   - [r/Archives](https://www.reddit.com/r/Archives/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/library-and-information-studies/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 # Curriculum
 
-## Intro Library and Information Studies
+## How to use this curriculum
 
-Build foundational knowledge in information concepts, history, and basic skills.
+The curriculum is divided into **Core sections** (essential for everyone) and **Specialization Tracks** (deeper or more focused paths you can choose later).
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Introduction to Library and Information Studies | Provides an overview of the field, its history, professional values, and role in society. | [*Foundations of Library and Information Science* by Richard E. Rubin](https://www.amazon.com/Foundations-Library-Information-Science-Richard/dp/0838947441) | [Introduction to Library and Information Science](https://alison.com/course/introduction-to-library-and-information-science) |
-| Information in Society | Explores how information shapes culture, economy, and daily life; introduces information literacy. | [*Looking for Information: A Survey of Research on Information Seeking, Needs, and Behavior* by Donald O. Case and Lisa M. Given](https://www.amazon.com/Looking-Information-Research-Seeking-Behavior/dp/1785609688) | Covered in [Introduction to Library and Information Science](https://alison.com/course/introduction-to-library-and-information-science) |
+### Core Sections
 
-## Core Library and Information Studies
+These four sections form the essential foundation of the discipline. Study them **in this exact order**:
 
-These form the backbone, equivalent to the first three years of undergraduate study. Subjects are sequenced logically: start with organization, move to retrieval and services, then management and ethics.
+1. **Foundations of Library and Information Studies**  
+   Start here. This section introduces the basic ideas, history, and professional identity of the field.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Organization of Information | Fundamental to describing, classifying, and structuring knowledge for access (e.g., cataloging, metadata). | [*Organization of Information* by Arlene G. Taylor and Daniel N. Joudrey](https://www.amazon.com/Organization-Information-Arlene-G-Taylor/dp/1598848585) | [Catalogers Learning Workshop (Library of Congress Training Materials)](https://www.loc.gov/catworkshop/) |
-| Knowledge Representation and Metadata | Builds skills in standards like MARC, Dublin Core, and ontologies for digital resources. | [*Metadata* by Marcia Lei Zeng and Jian Qin](https://www.amazon.com/Metadata-Marcia-Lei-Zeng/dp/1555709656) | Covered in [Catalogers Learning Workshop (Library of Congress Training Materials)](https://www.loc.gov/catworkshop/) |
-| Information Retrieval and Search | Covers search engines, databases, indexing, and retrieval models. | [Introduction to Information Retrieval (Stanford Online Reading)](https://nlp.stanford.edu/IR-book/information-retrieval-book.html) | |
-| Reference and Information Services | Teaches how to assist users in finding and evaluating information. | [*Reference and Information Services: An Introduction* by Melissa A. Wong and Laura Saunders](https://www.amazon.com/Reference-Information-Services-Introduction-Professional/dp/1440875047) |  |
-| Collection Development and Management | Principles of selecting, acquiring, and maintaining resources. | [*Developing Library and Information Center Collections* by G. Edward Evans and Margaret Zarnosky Saponaro](https://www.amazon.com/Developing-Library-Information-Collections-Science/dp/1591582199) |  |
-| Library Management and Leadership | Covers administration, budgeting, and strategic planning in information organizations. | [*Management Basics for Information Professionals* by G. Edward Evans and Stacey Greenwell](https://www.amazon.com/Management-Basics-Information-Professionals-Fourth/dp/0838918735) |  |
-| Research Methods in LIS | Introduces qualitative/quantitative methods, evaluation, and evidence-based practice. | [*Basic Research Methods for Librarians* by Lynn Silipigni Connaway and Ronald R. Powell](https://www.amazon.com/Basic-Research-Methods-Librarians-Professional/dp/1591588634) |  |
-| Ethics, Policy, and Professional Issues | Examines intellectual freedom, privacy, equity, and legal frameworks. | [*Foundations of Library and Information Science* by Richard E. Rubin](https://www.amazon.com/Foundations-Library-Information-Science-Richard/dp/0838947441) | Covered in [Introduction to Library and Information Science](https://alison.com/course/introduction-to-library-and-information-science) |
+2. **Information, Users, and Society**  
+   Next, learn how people actually interact with information in real life and the societal issues connected to it.
 
-## Advanced Library and Information Studies
+3. **Knowledge Organization and Discovery**  
+   Then move to the methods and systems used to describe, organize, and find information – a central skill in LIS.
 
-### Digital Libraries and Information Technology
+4. **Library Services and Collections**  
+   Finally, understand the practical, public-facing work of libraries: helping users and building collections.
 
-Focus: Managing digital collections, systems, and emerging technologies.
+### Specialization Tracks
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Digital Libraries | Design and management of digital repositories and access systems. | [*Digital Libraries* by William Y. Arms](https://www.amazon.com/Digital-Libraries-William-Y-Arms/dp/0262511274) |  |
-| Information Architecture and User Experience | Structuring websites and interfaces for intuitive navigation. | [*Information Architecture: For the Web and Beyond* by Louis Rosenfeld, Peter Morville, and Jorge Arango](https://www.amazon.com/Information-Architecture-Beyond-Louis-Rosenfeld/dp/1491911689) |  |
-| Database Systems for Information Professionals | Basics of relational databases and data management. | [*Database Systems: The Complete Book* by Hector Garcia-Molina et al.](https://www.amazon.com/Database-Systems-Complete-Hector-Garcia-Molina/dp/0130319953) |  |
-| Digital Preservation and Curation | Long-term stewardship of digital materials. | [*Digital Preservation* (various authors)](https://www.amazon.com/s?k=digital+preservation+libraries+unlimited) |  |
+After completing the Core, you can pick one or more of the remaining sections depending on the direction you want to explore:
 
-### Archives and Records Management
+- **Management, Research, and Professional Practice**: Choose this if you are interested in leading libraries, managing teams, doing research, or understanding the business and policy side of information organizations.
+- **Digital, Data, and Technical LIS**: Choose this if you want to work with technology, digital collections, databases, user experience design, or research data.
+- **Archives, Records, and Preservation**: Choose this if you are drawn to historical materials, recordkeeping, archives, or long-term preservation of physical and digital items.
+- **Specialized and Community Services**: Choose this if you want to focus on serving specific groups (children, youth, diverse communities) or on topics like open access and scholarly communication.
 
-Focus: Preservation and organization of historical and organizational records.
+## Foundations of Library and Information Studies
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Archival Principles and Practices | Appraisal, arrangement, description, and access for archives. | [*Arranging and Describing Archives and Manuscripts* by Kathleen D. Roe](https://www2.archivists.org/sites/all/files/ArrangingAndDescribing-OutlineAug2015.pdf) | [National Archives Records Management Online Lessons](https://www.archives.gov/records-mgmt/training/online-lessons) |
-| Records Management | Lifecycle management of organizational records. | [*Records Management* by Judith Read and Mary Lea Ginn](https://archive.org/details/recordsmanagemen0010read) | Covered in [National Archives Records Management Online Lessons](https://www.archives.gov/records-mgmt/training/online-lessons) |
-| Preservation of Physical and Digital Materials | Conservation techniques and strategies. | [*Promoting Preservation Awareness in Libraries* by Jeanne M. Drewes and Julie A. Page](https://archive.org/details/promotingpreserv0000unse) |  |
+Core concepts, history, values, and professional identity.
 
-### Public and User Services (including Youth and Academic)
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Introduction to LIS | **[Foundations of Library and Information Science – Richard E. Rubin](https://archive.org/details/foundationsoflib0000rubi)** | **[Introduction to Library and Information Science (Alison)](https://alison.com/course/introduction-to-library-and-information-science)** |
+| History of Libraries and Knowledge Institutions | **[Libraries and Information in the Ancient World – Lionel Casson (Archive.org)](https://archive.org/details/librariesinancie00cass)** | **[Library History Round Table Resources (ALA)](https://www.ala.org/lhrt)** |
+| LIS as a Profession | **[Foundations of Library and Information Science – Rubin](https://archive.org/details/foundationsoflib0000rubi)** | Same as above |
 
-Focus: Community engagement, instruction, and specialized services.
+## Information, Users, and Society
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Information Literacy and Instruction | Teaching users to evaluate and use information effectively. | [*Information Literacy Instruction Handbook* by Christopher N. Cox and Elizabeth Blakesley Lindsay](https://archive.org/details/informationliter0000unse_i1r8) | [Information & Digital Literacy for University Success](https://www.coursera.org/learn/digital-literacy) |
-| Services to Diverse Populations | Equity, inclusion, and culturally competent services. | [*Information Services to Diverse Populations* by Nicole A. Cooke](https://www.amazon.com/Information-Services-Diverse-Populations-Developing/dp/1440834601) |  |
-| Youth Services in Libraries | Programming and collections for children/teens. | [*Children's Literature in Action* by Sylvia M. Vardell](https://www.amazon.com/Childrens-Literature-Action-Practical-Guide/dp/1610695623) |  |
+How people seek, use, and are shaped by information.
 
-## Capstone
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Information Behavior | *Looking for Information – Case & Given* | **[Information Behavior Lectures (UNC SILS, YouTube)](https://www.youtube.com/@uncsils)** |
+| Information Literacy | **[Information Literacy Instruction Handbook – Cox & Lindsay](https://www.alastore.ala.org/content/information-literacy-instruction-handbook)** | **[Information & Digital Literacy for University Success (Coursera)](https://www.coursera.org/learn/digital-literacy)** |
+| Information Ethics & Society | Rubin (relevant chapters) | **[ALA Office for Intellectual Freedom](https://www.ala.org/tools/challengesupport/intellectualfreedom)** |
 
-Apply knowledge through a substantial independent project. Use resources from prior phases to build your project and portfolio. No specific new course or book required—synthesize from the roadmap.
+## Knowledge Organization and Discovery
+
+Describing, structuring, and retrieving information.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Organization of Information | *Organization of Information – Taylor & Joudrey* | **[Catalogers Learning Workshop (LC)](https://www.loc.gov/catworkshop/)** |
+| Metadata & Knowledge Representation | *Metadata – Zeng & Qin* | Same as above |
+| Information Retrieval | **[Introduction to Information Retrieval – Manning et al. (free online)](https://nlp.stanford.edu/IR-book/)** | Stanford IR online text |
+
+## Library Services and Collections
+
+Public-facing and collection-centered work.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Reference & Information Services | *Reference and Information Services – Wong & Saunders* | **[RUSA Guidelines (ALA)](https://www.ala.org/rusa/resources/guidelines)** |
+| Collection Development | *Developing Library and Information Center Collections – Evans & Saponaro* | **[Collection Development Policies (IFLA)](https://www.ifla.org/guidelines/)** |
+| User Services Assessment | Connaway & Powell (selected chapters) | **[IMLS Evaluation Resources](https://www.imls.gov/grants/grant-resources)** |
+
+## Management, Research, and Professional Practice
+
+Running and improving information organizations.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Library Management | *Management Basics for Information Professionals – Evans & Greenwell* | **[Library Leadership & Management (WebJunction)](https://www.webjunction.org/)** |
+| Research Methods in LIS | *Basic Research Methods for Librarians – Connaway & Powell* | **[Evidence-Based Library & Information Practice (open journal)](https://journals.library.ualberta.ca/eblip/)** |
+| Policy, Law, and Ethics | Rubin (ethics chapters) | **[Copyright for Librarians (Library of Congress)](https://www.loc.gov/programs/copyright-for-librarians/)** |
+
+## Digital, Data, and Technical LIS
+
+Technology-mediated information systems.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Digital Libraries | **[Digital Libraries – William Y. Arms (Archive.org)](https://archive.org/details/digitallibraries0000arms)** | **[Digital Libraries Lectures (UIUC, YouTube)](https://www.youtube.com/@ischooluiuc)** |
+| Information Architecture & UX | *Information Architecture for the Web and Beyond – Rosenfeld et al.* | **[UX for Librarians (NISO)](https://www.niso.org/)** |
+| Databases for LIS | **[Database Design – Adrienne Watt (open textbook)](https://opentextbc.ca/dbdesign01/)** | **[OpenTextbook: Database Design](https://opentextbc.ca/dbdesign01/)** |
+| Research Data Management | *Research Data Management – Pryor et al. (open access)* | **[RDM Toolkit (UK Data Service)](https://www.data-archive.ac.uk/teach/teaching-resources)** |
+
+## Archives, Records, and Preservation
+
+Parallel traditions in information stewardship.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Archival Principles | **[Arranging and Describing Archives and Manuscripts – Roe (free PDF)](https://www2.archivists.org/sites/all/files/Arranging-and-Describing-Archives-and-Manuscripts.pdf)** | **[Society of American Archivists Tutorials](https://www2.archivists.org/education)** |
+| Records Management | **[Records Management – Read & Ginn (Archive.org)](https://archive.org/details/recordmanagement0000read)** | **[NARA Records Management Lessons](https://www.archives.gov/records-mgmt/training/online-lessons)** |
+| Preservation (Physical & Digital) | **[Digital Preservation Handbook – Digital Preservation Coalition (free)](https://www.dpconline.org/handbook)** | Same handbook |
+
+## Specialized and Community Services
+
+Focused service domains.
+
+| Subject | Book | Online Course / Resource |
+| --- | --- | --- |
+| Services to Diverse Populations | *Information Services to Diverse Populations – Nicole A. Cooke* | **[Equity, Diversity & Inclusion (ALA)](https://www.ala.org/tools/diversity)** |
+| Youth Services | *Children’s Literature in Action – Vardell* | **[Youth Services Competencies (YALSA)](https://www.ala.org/yalsa/guidelines)** |
+| Scholarly Communication | **[Open Access – Peter Suber (free online)](https://open-access.net/)** | **[SPARC Open Education Resources](https://sparcopen.org/)** |
 
 ## Congratulations
 
