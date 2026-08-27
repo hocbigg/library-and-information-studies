@@ -1,49 +1,64 @@
 # Advanced Topics
 
-After completing the Core, you can pick one or more of the remaining sections depending on the direction you want to explore:
+After completing the Core Undergraduate Curriculum, learners can specialize in one or more advanced tracks depending on their professional and research goals:
 
-- **Management, Research, and Professional Practice**: Choose this if you are interested in leading libraries, managing teams, doing research, or understanding the business and policy side of information organizations.
-- **Digital, Data, and Technical LIS**: Choose this if you want to work with technology, digital collections, databases, user experience design, or research data.
-- **Archives, Records, and Preservation**: Choose this if you are drawn to historical materials, recordkeeping, archives, or long-term preservation of physical and digital items.
-- **Specialized and Community Services**: Choose this if you want to focus on serving specific groups (children, youth, diverse communities) or on topics like open access and scholarly communication.
+- **Archives, Records, and Special Collections Stewardship**: Focuses on the preservation, arrangement, description, and legal governance of historical records, rare books, and long-term digital memory.
+- **Data Curation, Semantic Technologies, and Informetrics**: Explores the lifecycle management of scientific research datasets, semantic web ontologies, linked data architectures, and quantitative citation analysis.
+- **Information Architecture, Discovery Systems, and UX**: Focuses on designing intuitive digital structures, advanced search engines, faceted taxonomies, and user-centered digital library systems.
+- **Scholarly Communication, Critical Informatics, and Information Policy**: Examines the political economy of academic publishing, intellectual property law, algorithmic justice, and the societal impact of global information policies.
+- **Community Engagement, Critical Pedagogy, and Specialized Librarianship**: Addresses culturally sustaining services, social justice in library programming, critical instructional design, and specialized domain environments (medical and legal informatics).
 
-## Management, Research, and Professional Practice
+## Archives, Records, and Special Collections Stewardship
 
-Running and improving information organizations.
+Theoretical frameworks and technical workflows for appraising, organizing, preserving, and providing access to enduring cultural and institutional records.
 
-| Subject | Book | Online Course / Resource |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Library Management | *Management Basics for Information Professionals – Evans & Greenwell* | **[Library Leadership & Management (WebJunction)](https://www.webjunction.org/)** |
-| Research Methods in LIS | *Basic Research Methods for Librarians – Connaway & Powell* | **[Evidence-Based Library & Information Practice (open journal)](https://journals.library.ualberta.ca/eblip/)** |
-| Policy, Law, and Ethics | Rubin (ethics chapters) | **[Copyright for Librarians (Library of Congress)](https://www.loc.gov/programs/copyright-for-librarians/)** |
+| Archival Theory, Appraisal, and Provenance | Examines the core tenets of archival science—respect des fonds, provenance, and original order—alongside contemporary appraisal and macro-appraisal frameworks. | - *Arranging and Describing Archives and Manuscripts* – Dennis Meissner (Society of American Archivists)<br>- *Selecting and Appraising Archives and Manuscripts* – Frank Boles (SAA)<br>- **[Society of American Archivists (SAA) Standards and Guidelines](https://www2.archivists.org/standards)** |
+| Digital Preservation and Curation | Details the technological strategies (migration, emulation, fixity checking) and international standards required to ensure perpetual access to digital assets. | - **[Digital Preservation Handbook (Digital Preservation Coalition)](https://www.dpconline.org/handbook)**<br>- *The Reference Model for an Open Archival Information System (OAIS)* (ISO 14721)<br>- **[National Digital Stewardship Alliance (NDSA) Levels of Digital Preservation](https://ndsa.org/activities/levels-of-digital-preservation/)** |
+| Records Management and Information Governance | Investigates the legal, regulatory, and operational lifecycles of organizational records from creation and classification to disposition and compliance. | - *Records and Information Management* (3rd Edition) – Patricia C. Franks<br>- *ISO 15489-1: Information and documentation — Records management*<br>- **[NARA Records Management Training](https://www.archives.gov/records-mgmt/training)** |
+| Rare Books, Manuscripts, and Physical Conservation | Teaches descriptive bibliography, provenance research, material culture history, and preventive physical conservation of paper, binding, and media formats. | - *Preserving Archives and Manuscripts* – Mary Lynn Ritzenthaler (SAA)<br>- *ABC for Book Collectors* – John Carter & Nicolas Barker (Oak Knoll Press)<br>- **[Northeast Document Conservation Center (NEDCC) Preservation Leaflets](https://www.nedcc.org/free-resources/preservation-leaflets/overview)** |
 
-## Digital, Data, and Technical LIS
+## Data Curation, Semantic Technologies, and Informetrics
 
-Technology-mediated information systems.
+Computational, semantic, and quantitative methods for stewarding research datasets, structuring knowledge graphs, and evaluating research performance.
 
-| Subject | Book | Online Course / Resource |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Digital Libraries | **[Digital Libraries – William Y. Arms (Archive.org)](https://archive.org/details/digitallibraries0000arms)** | **[Digital Libraries Lectures (UIUC, YouTube)](https://www.youtube.com/@ischooluiuc)** |
-| Information Architecture & UX | *Information Architecture for the Web and Beyond – Rosenfeld et al.* | **[UX for Librarians (NISO)](https://www.niso.org/)** |
-| Databases for LIS | **[Database Design – Adrienne Watt (open textbook)](https://opentextbc.ca/dbdesign01/)** | **[OpenTextbook: Database Design](https://opentextbc.ca/dbdesign01/)** |
-| Research Data Management | *Research Data Management – Pryor et al. (open access)* | **[RDM Toolkit (UK Data Service)](https://www.data-archive.ac.uk/teach/teaching-resources)** |
+| Research Data Management and FAIR Stewardship | Covers data management plans (DMPs), open science mandates, metadata schemas for raw datasets, and the FAIR (Findable, Accessible, Interoperable, Reusable) principles. | - *Research Data Management: Practical Approaches for Information Professionals* – Edited by Graham Pryor, Sarah Jones, and Angus Whyte<br>- *The FAIR Guiding Principles for Scientific Data Management and Stewardship* – Mark D. Wilkinson et al. (Nature Scientific Data)<br>- **[DCC Lifecycle Model and Toolkits (Digital Curation Centre)](https://www.dcc.ac.uk/guidance)** |
+| Ontologies, Linked Data, and the Semantic Web | Explores RDF/OWL frameworks, graph databases, SPARQL querying, and BIBFRAME to link bibliographic entities across the decentralized web. | - *Semantic Web for the Working Ontologist: Effective Modeling for Linked Data, RDFS, and OWL* (3rd Edition) – Dean Allemang, James Hendler, and Fabien Gandon<br>- **[W3C Semantic Web and Linked Data Standards](https://www.w3.org/standards/semanticweb/)**<br>- **[Library of Congress BIBFRAME Model and Services](https://www.loc.gov/bibframe/)** |
+| Bibliometrics, Scientometrics, and Informetrics | Introduces mathematical and statistical models used to quantify citation networks, journal impact factors, h-index metrics, altmetrics, and research trends. | - *Bibliometrics and Citation Analysis: From the Science Citation Index to Cybermetrics* – Nicola De Bellis<br>- *Citation Analysis in Research Evaluation* – Henk F. Moed (Springer)<br>- **[CWTS Leiden Manifesto for Research Metrics](http://www.leidenmanifesto.org/)** |
+| Data Librarianship and Computational Notebooks | Equips information professionals to support computational reproducibility, Python/R data workflows, and institutional repository infrastructure. | - *Data Librarianship: The Academic Library in the Data Era* – Lisa Federer<br>- *Big Data, Little Data, No Data: Scholarship in the Networked World* – Christine L. Borgman (MIT Press)<br>- **[The Carpentries (Library Carpentry Lessons)](https://librarycarpentry.org/lessons/)** |
 
-## Archives, Records, and Preservation
+## Information Architecture, Discovery Systems, and UX
 
-Parallel traditions in information stewardship.
+Designing, evaluating, and optimizing user-centered search interfaces, classification taxonomies, and interactive digital knowledge repositories.
 
-| Subject | Book | Online Course / Resource |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Archival Principles | **[Arranging and Describing Archives and Manuscripts – Roe (free PDF)](https://www2.archivists.org/sites/all/files/Arranging-and-Describing-Archives-and-Manuscripts.pdf)** | **[Society of American Archivists Tutorials](https://www2.archivists.org/education)** |
-| Records Management | **[Records Management – Read & Ginn (Archive.org)](https://archive.org/details/recordmanagement0000read)** | **[NARA Records Management Lessons](https://www.archives.gov/records-mgmt/training/online-lessons)** |
-| Preservation (Physical & Digital) | **[Digital Preservation Handbook – Digital Preservation Coalition (free)](https://www.dpconline.org/handbook)** | Same handbook |
+| Information Architecture and Taxonomy Engineering | Investigates structural navigation, controlled vocabularies, thesaurus construction, and labeling systems across complex digital ecosystems. | - *Information Architecture: For the Web and Beyond* (4th Edition) – Louis Rosenfeld, Peter Morville, and Jorge Arango (O'Reilly)<br>- *The Accidental Taxonomist* (3rd Edition) – Heather Hedden (Information Today)<br>- *ANSI/NISO Z39.19: Guidelines for the Construction, Format, and Management of Monolingual Controlled Vocabularies* |
+| Advanced Information Retrieval and Discovery Engines | Explores vector space models, probabilistic search, inverted index optimization, crawling architectures, and automated relevance ranking. | - **[Introduction to Information Retrieval – Christopher D. Manning, Prabhakar Raghavan, and Hinrich Schütze (Stanford Open Text)](https://nlp.stanford.edu/IR-book/)**<br>- *Information Retrieval: Implementing and Evaluating Search Engines* – Stefan Büttcher, Charles L. A. Clarke, and Gordon V. Cormack |
+| User Experience (UX) and Usability in Libraries | Covers ethnographic user research, usability testing protocols, heuristic evaluation, and service design methodologies tailored to cultural institutions. | - *User Experience in Libraries: Applying Ethnography and Human-Centred Design* – Edited by Andy Priestner and Matt Borg<br>- *Useful, Usable, Desirable: Applying User Experience Design to Your Library* – Aaron Schmidt and Amanda Etches<br>- **[Nielsen Norman Group Library UX Research Articles](https://www.nngroup.com/)** |
+| Human-Information Interaction and Cognitive Search Models | Analyzes the cognitive, affective, and situational dimensions of complex exploratory search, sensemaking, and information encountering. | - *Information Seeking in Electronic Environments* – Gary Marchionini (Cambridge University Press)<br>- *Information Science: The Basics and Beyond* – Tefko Saracevic (Selected Papers on Interactive Information Retrieval)<br>- *Looking for Information* (Advanced Conceptual Sections) – Donald O. Case and Lisa M. Given |
 
-## Specialized and Community Services
+## Scholarly Communication, Critical Informatics, and Information Policy
 
-Focused service domains.
+The socioeconomic, legal, and structural systems governing knowledge production, open science, copyright, intellectual freedom, and algorithmic equity.
 
-| Subject | Book | Online Course / Resource |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Services to Diverse Populations | *Information Services to Diverse Populations – Nicole A. Cooke* | **[Equity, Diversity & Inclusion (ALA)](https://www.ala.org/tools/diversity)** |
-| Youth Services | *Children’s Literature in Action – Vardell* | **[Youth Services Competencies (YALSA)](https://www.ala.org/yalsa/guidelines)** |
-| Scholarly Communication | **[Open Access – Peter Suber (free online)](https://open-access.net/)** | **[SPARC Open Education Resources](https://sparcopen.org/)** |
+| Scholarly Publishing and Open Access Ecosystems | Examines the economic and structural transition from subscription models to Green/Gold/Diamond Open Access, transformative agreements, and institutional repositories. | - **[Open Access – Peter Suber (MIT Press Essential Knowledge Series)](https://mitpress.mit.edu/9780262517638/open-access/)**<br>- *Open Access and the Humanities: Contexts, Controversies and the Future* – Martin Paul Eve (Cambridge University Press)<br>- **[SPARC Open Access Resources](https://sparcopen.org/open-access/)** |
+| Copyright Law, Licensing, and Fair Use | Explores copyright jurisprudence, Section 108 exemptions, the TEACH Act, Creative Commons licensing, controlled digital lending, and international IP frameworks. | - *Copyright Law for Librarians and Educators: Creative Strategies and Practical Solutions* (4th Edition) – Kenneth D. Crews (ALA Editions)<br>- *The Library's Legal Answer Book* – Mary Minow and Tomas A. Lipinski (ALA Editions)<br>- **[US Copyright Office Library and Archival Exceptions](https://www.copyright.gov/)** |
+| Critical Information Studies and Algorithmic Bias | Critically analyzes how classification systems, search engine algorithms, and automated data infrastructures reproduce systemic inequality, racial bias, and digital marginalization. | - *Algorithms of Oppression: How Search Engines Reinforce Racism* – Safiya Umoja Noble (NYU Press)<br>- *Race After Technology: Abolitionist Tools for the New Jim Code* – Ruha Benjamin (Polity)<br>- *Sorting Things Out: Classification and Its Consequences* – Geoffrey C. Bowker and Susan Leigh Star (MIT Press) |
+| Information Policy and Global Governance | Details state surveillance, censorship, net neutrality, data sovereignty, privacy regulations (GDPR, CCPA), and telecommunications policy affecting libraries. | - *Change of State: Information, Policy, and Power* – Sandra Braman (MIT Press)<br>- *Public Libraries, Information Policy, and Social Justice* – John Carlo Bertot, Paul T. Jaeger, and Ursula Gorham<br>- **[Electronic Frontier Foundation (EFF) Policy and Digital Rights Analysis](https://www.eff.org/)** |
+
+## Community Engagement, Critical Pedagogy, and Specialized Librarianship
+
+Tailored information services, critical instructional praxis, and domain-specific knowledge organization for health, legal, and diverse community settings.
+
+| Topic | Why Study | Resources |
+| --- | --- | --- |
+| Critical Librarianship and Culturally Sustaining Practice | Applies critical race theory, intersectionality, and cultural humility to library outreach, programming, collection audits, and community partnerships. | - *Information Services to Diverse Populations: Developing Culturally Competent Library Professionals* – Nicole A. Cooke (Libraries Unlimited / ALA Neal-Schuman)<br>- *Pushing the Margins: Women of Color and Practice in Libraries* – Edited by Rose L. Chou and Annie Pho (Library Juice Press)<br>- **[ALA Office for Diversity, Literacy and Outreach Services](https://www.ala.org/aboutala/offices/diversity)** |
+| Critical Library Pedagogy and Instructional Design | Explores learner-centered pedagogical frameworks, critical information literacy, anti-oppressive teaching strategies, and programmatic instructional assessment. | - *Critical Library Pedagogy Handbook* (Volumes 1 & 2) – Edited by Nicole Pagowsky and Kelly McElroy (ACRL)<br>- *Teaching Information Literacy Reframed: 50+ Framework-Based Exercises for Creating Inquiring Minds* – Joanna M. Burkhardt (ALA Neal-Schuman)<br>- **[ACRL Framework for Information Literacy Sandbox](https://sandbox.acrl.org/)** |
+| Health Sciences Informatics and Medical Librarianship | Covers biomedical literature databases (PubMed/MEDLINE, MeSH), systematic reviews, health literacy, evidence-based medicine (EBM), and clinical research support. | - *Introduction to Health Sciences Librarianship* – M. Sandra Wood (Routledge)<br>- *Conducting Systematic Reviews: A Guide for Librarians* – Medical Library Association (MLA Books)<br>- **[National Library of Medicine (NLM) Training and Education](https://www.nlm.nih.gov/training.html)** |
+| Legal Informatics and Law Librarianship | Analyzes primary and secondary legal sources, specialized legal citation formats (Bluebook), statutory research workflows, and court record access. | - *Introduction to Law Librarianship* – Edited by Zanada Joyner and Cas Laskowski (Open Textbook)<br>- *The Accidental Law Librarian* – Anthony Aycock (Information Today)<br>- **[American Association of Law Libraries (AALL) Body of Knowledge](https://www.aallnet.org/)** |

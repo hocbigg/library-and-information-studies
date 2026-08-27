@@ -1,42 +1,30 @@
 # Great Courses
 
-This is a list of high-quality courses that, for one reason or another, didn't make it into the curriculum.
-The most common reasons are that the course isn't available often enough,
-or that there was an alternative that fit better into the curriculum.
+This collection highlights standout university courses, authoritative MOOCs, and specialized masterclasses in Library and Information Studies (LIS). These audiovisual deep-dives and self-paced programs build practical skills and mental models across metadata systems, data curation, information policy, and community engagement.
 
-## General and Professional Development
+## Knowledge Organization, Metadata, and Information Architecture
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[The Hyperlinked Library](https://www.mooc-list.com/course/hyperlinked-library-sjsu) | 8 weeks | 5-10 hours/week
-[Library Advocacy Unshushed (University of Toronto)](https://www.classcentral.com/course/edx-library-advocacy-unshushed-4506) | 4 weeks | 5-10 hours/week
-[Copyright for Educators & Librarians (Coursera, but audit free)](https://www.coursera.org/learn/copyright-for-education) | 5 weeks | 3-5 hours/week
+- [Catalogers Learning Workshop: LCSH, LCC, and RDA Training Modules (Library of Congress / Program for Cooperative Cataloging)](https://www.loc.gov/catworkshop/)
+- [Text Retrieval and Search Engines (Coursera / University of Illinois Urbana-Champaign / Prof. ChengXiang Zhai)](https://www.coursera.org/learn/text-retrieval)
+- [Designing Information Architecture Specialization (Coursera / Pabini Gabriel-Petit)](https://www.coursera.org/specializations/designing-information-architecture)
+- [BIBFRAME and Linked Data Webcasts and Presentations (Library of Congress)](https://www.loc.gov/bibframe/)
 
-## Digital and Technology
+## Digital Stewardship, Data Management, and Preservation
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Text Retrieval and Search Engines (University of Illinois)](https://www.coursera.org/learn/text-retrieval) | 8 weeks | 4-6 hours/week
-[Metadata: Organizing and Discovering Information (University of North Carolina)](https://www.coursera.org/learn/metadata) | 4 weeks | 3-5 hours/week
+- [Novice to Know-How: Digital Preservation Training (Digital Preservation Coalition / The National Archives UK)](https://www.dpconline.org/)
+- [Research Data Management and Sharing (Coursera / UNC Chapel Hill & University of Edinburgh / Dr. Helen Tibbo & Sarah Jones)](https://www.coursera.org/learn/data-management)
+- [Library Carpentry Core Curriculum: Data, Shell, and OpenRefine (The Carpentries)](https://librarycarpentry.org/lessons/)
+- [Records Management Training Online Lessons (U.S. National Archives and Records Administration - NARA)](https://www.archives.gov/records-mgmt/training/online-lessons)
 
-## Archives and Records
+## Information Law, Open Science, and Scholarly Communication
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Records Management Training Online Lessons (National Archives)](https://www.archives.gov/records-mgmt/training/online-lessons) | Self-paced | Variable
+- [Copyright for Educators & Librarians (Coursera / Duke University, UNC Chapel Hill & Emory University / Kevin Smith, Lisa Macklin & Anne Gilliland)](https://www.coursera.org/learn/copyright-for-education)
+- [CopyrightX: Online Lecture Series on Copyright and the Public Domain (Harvard Law School & Berkman Klein Center / Prof. William Fisher)](https://ipxcourses.org/course-overview/)
+- [A Starter's Guide to Open Science (Coursera / Erasmus University Rotterdam)](https://www.coursera.org/learn/a-starters-guide-to-open-science)
+- [Library Advocacy Unshushed (edX / University of Toronto / Wendy Newman)](https://www.classcentral.com/course/edx-library-advocacy-unshushed-4506)
 
-## Cataloging and Classification
+## Public Services, Cultural Heritage, and Community Engagement
 
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Library of Congress Classification Online Training](https://www.loc.gov/catworkshop/lcc/index.html) | Self-paced | 10-20 hours total
-[Library of Congress Subject Headings Online Training](https://www.loc.gov/catworkshop/lcsh/index.html) | Self-paced | 10-20 hours total
-
-## Online Learning - Great Courses
-
-
-Courses | Duration | Effort
-:-- | :--: | :--:
-[Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn) | 4 weeks | 2 hours/week
-[Mindshift](https://www.coursera.org/learn/mindshift) | 4 weeks | 2 hours/week
-[Powersearching with Google](https://www.edx.org/learn/google-power-searching/google-power-searching-with-google) | 3 weeks | 4-6 hours/week
+- [WebJunction Course Catalog for Libraries (OCLC Research / WebJunction)](https://learn.webjunction.org/)
+- [Creating a Digital Cultural Heritage Community (edX / KU Leuven)](https://www.edx.org/course/creating-a-digital-cultural-heritage-community)
+- [Wikipedia and Open Knowledge for Public Libraries (WebJunction / OCLC)](https://www.webjunction.org/)

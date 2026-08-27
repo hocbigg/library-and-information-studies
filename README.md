@@ -57,57 +57,57 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
 
 These four sections form the essential foundation of the discipline. Study them **in this exact order**:
 
-1. **Foundations of Library and Information Studies**  
-   Start here. This section introduces the basic ideas, history, and professional identity of the field.
+1. **Foundations of Library and Information Studies**
+   Start here. This section introduces the core principles, history, legal frameworks, ethics, and professional identity of the field.
 
-2. **Information, Users, and Society**  
-   Next, learn how people actually interact with information in real life and the societal issues connected to it.
+2. **Information, Users, and Society**
+   Next, learn how people seek and use information, how to teach information literacy, and how to evaluate user needs.
 
-3. **Knowledge Organization and Discovery**  
-   Then move to the methods and systems used to describe, organize, and find information – a central skill in LIS.
+3. **Knowledge Organization and Discovery**
+   Then move to the methods and systems used to describe, organize, and find information – a central technical competence in LIS.
 
-4. **Library Services and Collections**  
-   Finally, understand the practical, public-facing work of libraries: helping users and building collections.
+4. **Library Services and Collections**
+   Finally, understand the practical work of managing institutions, building collections, and delivering reference services to communities.
 
 ## Foundations of Library and Information Studies
 
-Core concepts, history, values, and professional identity.
+Core concepts, history, values, legal frameworks, and professional identity.
 
 | Subject | Book | Online Course / Resource |
 | --- | --- | --- |
-| Introduction to LIS | **[Foundations of Library and Information Science – Richard E. Rubin](https://archive.org/details/foundationsoflib0000rubi)** | **[Introduction to Library and Information Science (Alison)](https://alison.com/course/introduction-to-library-and-information-science)** |
+| Introduction to LIS | **[Foundations of Library and Information Science – Richard E. Rubin and Rachel G. Rubin](https://archive.org/details/foundationsoflib0000rubi)** | **[ALA Core Competences of Librarianship](https://www.ala.org/educationcareers/education/corecompex)** |
 | History of Libraries and Knowledge Institutions | **[Libraries and Information in the Ancient World – Lionel Casson (Archive.org)](https://archive.org/details/librariesinancie00cass)** | **[Library History Round Table Resources (ALA)](https://www.ala.org/lhrt)** |
-| LIS as a Profession | **[Foundations of Library and Information Science – Rubin](https://archive.org/details/foundationsoflib0000rubi)** | Same as above |
+| Information Ethics, Policy, and Intellectual Freedom | *Foundations of Library and Information Science – Rubin & Rubin (Chapters on Ethics, Policy, and Values)* | **[ALA Office for Intellectual Freedom](https://www.ala.org/advocacy/intfreedom)** |
 
 ## Information, Users, and Society
 
-How people seek, use, and are shaped by information.
+How people seek, use, and evaluate information, and how information professionals support user communities.
 
 | Subject | Book | Online Course / Resource |
 | --- | --- | --- |
-| Information Behavior | *Looking for Information – Case & Given* | **[Information Behavior Lectures (UNC SILS, YouTube)](https://www.youtube.com/@uncsils)** |
-| Information Literacy | **[Information Literacy Instruction Handbook – Cox & Lindsay](https://www.alastore.ala.org/content/information-literacy-instruction-handbook)** | **[Information & Digital Literacy for University Success (Coursera)](https://www.coursera.org/learn/digital-literacy)** |
-| Information Ethics & Society | Rubin (relevant chapters) | **[ALA Office for Intellectual Freedom](https://www.ala.org/tools/challengesupport/intellectualfreedom)** |
+| Information Behavior | *Looking for Information: A Survey of Research on Information Seeking, Needs, and Behavior – Donald O. Case & Lisa M. Given* | Information Behavior Models and Concepts (Lectures by Carol Kuhlthau / T.D. Wilson) |
+| Information Literacy and Instruction | *Instruction in Libraries and Information Centers: An Introduction – Laura Saunders & Melissa A. Wong* | **[ACRL Framework for Information Literacy for Higher Education](https://www.ala.org/acrl/standards/ilframework)** |
+| Research Methods and User Assessment in LIS | *Research and Assessment in Libraries: Practical Techniques for Librarians – Lynn Silipigni Connaway & Marie L. Radford* | **[IMLS Evaluation Resources](https://www.imls.gov/grants/grant-resources)** |
 
 ## Knowledge Organization and Discovery
 
-Describing, structuring, and retrieving information.
+Describing, structuring, cataloging, and retrieving information resources.
 
 | Subject | Book | Online Course / Resource |
 | --- | --- | --- |
-| Organization of Information | *Organization of Information – Taylor & Joudrey* | **[Catalogers Learning Workshop (LC)](https://www.loc.gov/catworkshop/)** |
-| Metadata & Knowledge Representation | *Metadata – Zeng & Qin* | Same as above |
-| Information Retrieval | **[Introduction to Information Retrieval – Manning et al. (free online)](https://nlp.stanford.edu/IR-book/)** | Stanford IR online text |
+| Organization of Information | *The Organization of Information – Daniel N. Joudrey & Arlene G. Taylor* | **[Catalogers Learning Workshop (Library of Congress)](https://www.loc.gov/catworkshop/)** |
+| Metadata & Knowledge Representation | *Metadata – Marcia Lei Zeng & Jian Qin* | **[Introduction to Metadata – Getty Research Institute](https://www.getty.edu/publications/intrometadata/)** and **[Dublin Core User Guide (DCMI)](https://www.dublincore.org/resources/userguide/)** |
+| Information Retrieval | *Introduction to Modern Information Retrieval – G. G. Chowdhury* | Principles of Information Retrieval: Boolean Logic, Indexing, and Search Interfaces |
 
 ## Library Services and Collections
 
-Public-facing and collection-centered work.
+Public-facing services, collection stewardship, and institutional administration.
 
 | Subject | Book | Online Course / Resource |
 | --- | --- | --- |
-| Reference & Information Services | *Reference and Information Services – Wong & Saunders* | **[RUSA Guidelines (ALA)](https://www.ala.org/rusa/resources/guidelines)** |
-| Collection Development | *Developing Library and Information Center Collections – Evans & Saponaro* | **[Collection Development Policies (IFLA)](https://www.ifla.org/guidelines/)** |
-| User Services Assessment | Connaway & Powell (selected chapters) | **[IMLS Evaluation Resources](https://www.imls.gov/grants/grant-resources)** |
+| Reference & Information Services | *Reference and Information Services: An Introduction – Laura Saunders & Melissa A. Wong* | **[RUSA Professional Competencies and Guidelines (ALA)](https://www.ala.org/rusa/resources/guidelines)** |
+| Collection Development and Management | *Fundamentals of Collection Development and Management – Peggy Johnson* | **[Collection Development Policies Guidelines (IFLA)](https://www.ifla.org/guidelines/)** |
+| Library Management and Administration | *Library and Information Center Management – Barbara B. Moran & Claudia J. Morner* | **[ALA Core: Leadership, Infrastructure, Futures](https://www.ala.org/core)** |
 
 ## Congratulations
 
@@ -118,6 +118,3 @@ Congratulations!
 # Code of conduct
 
 [Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
-
-
-
