@@ -3,14 +3,7 @@ title: Hocbigg - Library and Information Studies
 description: Path to a free self-taught education in Library and Information Studies!
 ---
 
-# Contents
-
-- [Summary](#summary)
-- [Communities](#communities)
-- [Curriculum](#curriculum)
-- [Code of conduct](#code-of-conduct)
-
-# Summary
+## Introduction
 
 The Library and Information Studies curriculum is a **complete education in Library and Information Studies** using online materials.
 
@@ -18,26 +11,7 @@ The field of LIS encompasses the organization, access, preservation, and ethical
 
 The program is divided into phases with logical progression: prerequisites build foundational skills, core subjects provide essential knowledge, advanced electives allow specialization, and a capstone synthesizes learning.
 
-## Organization
-
-This repository is organized into 2 main components:
-
-- **Core Curriculum** (this page): the foundational knowledge of the field;
-- **[Advanced Topics](advanced_topics.md)**: focused study in specific areas;
-
-**Process:** Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.
-
-- For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.
-- The Core Curriculum provides a shared foundation and is intended to be completed in full.
-- Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.
-
-Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md).
-
-
-**[How to contribute](/CONTRIBUTING.html)**
-
-# Communities
+## Communities
 
 - Subreddits:
     - [r/librarians](https://www.reddit.com/r/librarians/)
@@ -45,76 +19,98 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
     - [r/LibraryScience](https://www.reddit.com/r/LibraryScience/)
     - [r/Archives](https://www.reddit.com/r/Archives/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/library-and-information-studies/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
-- Join our Discord server (for discussions around this and other curricula): 
-    
-    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
-# Curriculum
+## Curriculum
 
-## How to use this curriculum
+### Foundations of Library and Information Studies
 
-### Core Sections
+This subject introduces the history and mission of knowledge institutions, core professional values, the lifecycle of recorded knowledge, and the institutional landscape of modern information work.
 
-These four sections form the essential foundation of the discipline. Study them **in this exact order**:
+[Foundations of Library and Information Science (ALA Neal-Schuman / Richard E. Rubin & Rachel G. Rubin)](https://books.google.com/books?isbn=9780838947449) - The comprehensive foundational textbook covering library history, information society dynamics, professional values, and institutional types; serves as the primary theoretical anchor for the discipline.
 
-1. **Foundations of Library and Information Studies**
-   Start here. This section introduces the core principles, history, legal frameworks, ethics, and professional identity of the field.
+LiFT: Public Library Fundamentals (WebJunction / Idaho Commission for Libraries) - A free, self-paced interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that provides an accessible, practical on-ramp covering core library missions and front-line professional ethics before or alongside Rubin and Rubin.
 
-2. **Information, Users, and Society**
-   Next, learn how people seek and use information, how to teach information literacy, and how to evaluate user needs.
 
-3. **Knowledge Organization and Discovery**
-   Then move to the methods and systems used to describe, organize, and find information – a central technical competence in LIS.
+### Information Ethics, Policy, and Intellectual Freedom
 
-4. **Library Services and Collections**
-   Finally, understand the practical work of managing institutions, building collections, and delivering reference services to communities.
+This subject examines the legal and philosophical principles governing information access, including censorship, intellectual property, user privacy, and professional codes of ethics.
 
-## Foundations of Library and Information Studies
+[Foundations of Information Ethics (ALA Neal-Schuman / John T. F. Burgess & Emily J. M. Knox, eds.)](https://books.google.com/books?isbn=9780838917244) - The core conceptual text exploring philosophical frameworks, intellectual freedom, user privacy, information poverty, and copyright policy.
 
-Core concepts, history, values, legal frameworks, and professional identity.
+ABLE 12: Ethics and Public Service (Idaho Commission for Libraries / WebJunction) - A practical, self-paced tutorial (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based complement to Burgess and Knox, focusing on daily ethical dilemmas, patron confidentiality, and equitable service policies.
 
-| Subject | Book | Online Course / Resource |
-| --- | --- | --- |
-| Introduction to LIS | **[Foundations of Library and Information Science – Richard E. Rubin and Rachel G. Rubin](https://archive.org/details/foundationsoflib0000rubi)** | **[ALA Core Competences of Librarianship](https://www.ala.org/educationcareers/education/corecompex)** |
-| History of Libraries and Knowledge Institutions | **[Libraries and Information in the Ancient World – Lionel Casson (Archive.org)](https://archive.org/details/librariesinancie00cass)** | **[Library History Round Table Resources (ALA)](https://www.ala.org/lhrt)** |
-| Information Ethics, Policy, and Intellectual Freedom | *Foundations of Library and Information Science – Rubin & Rubin (Chapters on Ethics, Policy, and Values)* | **[ALA Office for Intellectual Freedom](https://www.ala.org/advocacy/intfreedom)** |
 
-## Information, Users, and Society
+### Information Behavior and User Needs
 
-How people seek, use, and evaluate information, and how information professionals support user communities.
+This subject investigates how people experience information needs, seek out knowledge across diverse contexts, and evaluate resources to resolve cognitive gaps.
 
-| Subject | Book | Online Course / Resource |
-| --- | --- | --- |
-| Information Behavior | *Looking for Information: A Survey of Research on Information Seeking, Needs, and Behavior – Donald O. Case & Lisa M. Given* | Information Behavior Models and Concepts (Lectures by Carol Kuhlthau / T.D. Wilson) |
-| Information Literacy and Instruction | *Instruction in Libraries and Information Centers: An Introduction – Laura Saunders & Melissa A. Wong* | **[ACRL Framework for Information Literacy for Higher Education](https://www.ala.org/acrl/standards/ilframework)** |
-| Research Methods and User Assessment in LIS | *Research and Assessment in Libraries: Practical Techniques for Librarians – Lynn Silipigni Connaway & Marie L. Radford* | **[IMLS Evaluation Resources](https://www.imls.gov/grants/grant-resources)** |
+[Looking for Information: Examining Research on How People Engage with Information (Emerald Publishing / Lisa M. Given, Donald O. Case, & Rebekah Willson)](https://books.google.com/books?isbn=9781803824246) - The definitive academic survey text outlining theoretical models of information seeking, cognitive processes, and user interaction patterns.
 
-## Knowledge Organization and Discovery
+[INFideos: Information Science Video Series (YouTube / Dr. Jenna Hartel)](https://www.youtube.com/@INFideos) - An open university video series providing intuitive, visual walkthroughs of landmark behavioral models (such as Kuhlthau's Information Search Process and Bates's berrypicking), designed as an accessible visual entry point before tackling Given, Case, and Willson.
 
-Describing, structuring, cataloging, and retrieving information resources.
 
-| Subject | Book | Online Course / Resource |
-| --- | --- | --- |
-| Organization of Information | *The Organization of Information – Daniel N. Joudrey & Arlene G. Taylor* | **[Catalogers Learning Workshop (Library of Congress)](https://www.loc.gov/catworkshop/)** |
-| Metadata & Knowledge Representation | *Metadata – Marcia Lei Zeng & Jian Qin* | **[Introduction to Metadata – Getty Research Institute](https://www.getty.edu/publications/intrometadata/)** and **[Dublin Core User Guide (DCMI)](https://www.dublincore.org/resources/userguide/)** |
-| Information Retrieval | *Introduction to Modern Information Retrieval – G. G. Chowdhury* | Principles of Information Retrieval: Boolean Logic, Indexing, and Search Interfaces |
+### Information Literacy and Instruction
 
-## Library Services and Collections
+This subject teaches the pedagogical theories, instructional design principles, and assessment strategies required to teach patrons how to discover, evaluate, and critically utilize information.
 
-Public-facing services, collection stewardship, and institutional administration.
+[Instruction in Libraries and Information Centers: An Introduction (Windsor & Downs Press / Laura Saunders & Melissa A. Wong)](https://iopn.library.illinois.edu/pressbooks/instructioninlibraries/) - A comprehensive open-access textbook focusing on teaching pedagogy, backward instructional design, learning theories, and lesson delivery for information professionals.
 
-| Subject | Book | Online Course / Resource |
-| --- | --- | --- |
-| Reference & Information Services | *Reference and Information Services: An Introduction – Laura Saunders & Melissa A. Wong* | **[RUSA Professional Competencies and Guidelines (ALA)](https://www.ala.org/rusa/resources/guidelines)** |
-| Collection Development and Management | *Fundamentals of Collection Development and Management – Peggy Johnson* | **[Collection Development Policies Guidelines (IFLA)](https://www.ifla.org/guidelines/)** |
-| Library Management and Administration | *Library and Information Center Management – Barbara B. Moran & Claudia J. Morner* | **[ALA Core: Leadership, Infrastructure, Futures](https://www.ala.org/core)** |
+[The Information Literacy User’s Guide: An Open, Online Textbook (Milne Open Textbooks / Greg Bobish & Trudi Jacobson, eds.)](https://milneopentextbooks.org/the-information-literacy-users-guide-an-open-online-textbook/) - A complementary open textbook structured around the Seven Pillars of Information Literacy, providing practical learner-facing exercises on search formulation and critical evaluation that directly inform what librarians teach.
 
-## Congratulations
 
-After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Library and Information Studies.
-Congratulations!
+### Organization of Information
 
-# Code of conduct
+This subject focuses on the theoretical principles and standardized practices used to classify, arrange, and describe knowledge records for storage and retrieval.
 
-[Hocbigg's code of conduct](https://github.com/hocbigg/code-of-conduct).
+[The Organization of Information (Libraries Unlimited / Daniel N. Joudrey & Arlene G. Taylor)](https://books.google.com/books?isbn=9781598848588) - The standard comprehensive textbook covering traditional bibliographic control, access points, authority control, and major classification systems like Dewey Decimal and Library of Congress.
+
+[The Discipline of Organizing: 4th Professional Edition (MIT Press / Robert J. Glushko, ed.)](https://open.umn.edu/opentextbooks/textbooks/the-discipline-of-organizing-4th-professional-edition) - An interdisciplinary, open-access alternative to Joudrey and Taylor that approaches organizational principles from a broader information architecture and systems perspective.
+
+LiFT: Library Catalog Series (WebJunction / Idaho Commission for Libraries) - A free four-course training track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that provides hands-on practical exercises in deciphering call numbers, subject headings, and copy cataloging to ground the theory learned in either textbook.
+
+
+### Metadata and Knowledge Representation
+
+This subject covers schemas, data models, controlled vocabularies, and linked data frameworks used to structure digital assets and bibliographic relationships.
+
+[Introduction to Metadata (Getty Publications / Murtha Baca, ed.)](https://www.getty.edu/publications/intrometadata/) - A concise, freely accessible open-access primer that serves as an introductory stepping stone focusing on metadata types, crosswalks, and practical curation principles for digital cultural collections.
+
+[Metadata (ALA Neal-Schuman / Marcia Lei Zeng & Jian Qin)](https://books.google.com/books?isbn=9780838917275) - A comprehensive follow-up textbook to Baca covering advanced metadata architecture, schema design, XML/RDF encoding standards, and Semantic Web implementations.
+
+
+### Information Retrieval
+
+This subject explores the technical and conceptual mechanics of search systems, indexing structures, Boolean and probabilistic algorithms, and search evaluation metrics.
+
+[Introduction to Modern Information Retrieval (Facet Publishing / G. G. Chowdhury)](https://books.google.com/books?isbn=9781856046947) - The primary conceptual textbook examining search interfaces, inverted files, query processing, vocabulary control, and retrieval evaluation without demanding an extensive programming background.
+
+[Introduction to Information Retrieval (Cambridge University Press / Christopher D. Manning, Prabhakar Raghavan, & Hinrich Schütze)](https://nlp.stanford.edu/IR-book/) - An authoritative, open-access textbook offering a rigorous computational deep-dive into indexing algorithms, vector space models, and scoring for learners seeking mathematical and algorithmic depth beyond Chowdhury.
+
+[Information Retrieval Lecture Series (University of Freiburg / Prof. Dr. Hannah Bast)](https://ad-wiki.informatik.uni-freiburg.de/teaching/InformationRetrievalWS2223) - A complete university video lecture series with slides and problem sets covering search engine mechanics, serving as a video-based lecture alternative to the Manning textbook.
+
+
+### Reference and Information Services
+
+This subject details the methods of conducting reference interviews, constructing specialized search queries, navigating reference sources, and delivering user assistance.
+
+[Reference and Information Services: An Introduction (Libraries Unlimited / Melissa A. Wong & Laura Saunders, eds.)](https://books.google.com/books?isbn=9781440875045) - The comprehensive foundational textbook exploring reference theory, source categories, search tactics, virtual reference, and user engagement across different institutional settings.
+
+LiFT: The Reference Interview (WebJunction / Idaho Commission for Libraries) - A free interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based companion to Wong and Saunders, training learners in active listening and query negotiation.
+
+
+### Collection Development and Management
+
+This subject addresses the lifecycle of library collections, including community needs assessment, selection criteria, acquisition models, licensing, collection evaluation, and deaccessioning.
+
+[Fundamentals of Collection Development and Management (ALA Editions / Peggy Johnson)](https://books.google.com/books?isbn=9780838916414) - The definitive professional textbook addressing collection policies, budgeting, vendor relations, electronic resource licensing, and preservation workflows.
+
+LiFT: Collection Management Series (WebJunction / Idaho Commission for Libraries) - A free six-part self-paced course track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that serves as a practical, workflow-oriented companion to Johnson, walking learners through selection, ordering, collection assessment, and weeding.
+
+
+### Library Management and Administration
+
+This subject examines administrative structures, strategic planning, budgeting and financial management, organizational leadership, and facilities planning within information agencies.
+
+[Library and Information Center Management (Libraries Unlimited / Barbara B. Moran & Claudia J. Morner)](https://books.google.com/books?isbn=9781440854477) - A standard, comprehensive textbook structuring library management around classic administrative functions, including planning, organizational design, human resources, leading, and fiscal control.
+
+[Management Basics for Information Professionals (ALA Neal-Schuman / G. Edward Evans & Stacey Greenwell)](https://books.google.com/books?isbn=9780838918739) - An alternative comprehensive textbook to Moran and Morner covering similar administrative ground, with particular emphasis on non-profit fiscal governance, organizational culture, and legal risk management.
