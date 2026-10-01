@@ -5,13 +5,29 @@ description: Path to a free self-taught education in Library and Information Stu
 
 ## Introduction
 
-The Library and Information Studies curriculum is a **complete education in Library and Information Studies** using online materials.
+Library and Information Studies (LIS) investigates how human societies record, organize, retrieve, evaluate, and preserve knowledge. The discipline sits at the intersection of human behavior, technical systems, and democratic stewardship — examining not just how information systems function, but how people interact with them and how institutions protect equitable access to knowledge. Whether you are exploring a career transition into the information professions, looking to manage cultural or organizational knowledge, or simply seeking to understand the architecture of recorded information, this curriculum provides a self-contained foundation for self-directed study.
 
-The field of LIS encompasses the organization, access, preservation, and ethical management of information in diverse formats and contexts, blending theory from information science with practical applications in libraries, archives, and digital environments.
+No prior background in library science, computer science, or archival studies is required. All materials are chosen for independent learners studying without institutional support, proprietary databases, or classroom instruction. Most subjects pair a comprehensive, canonical text with an open-access textbook, lecture series, or free self-paced training module from professional library bodies.
 
-The program is divided into phases with logical progression: prerequisites build foundational skills, core subjects provide essential knowledge, advanced electives allow specialization, and a capstone synthesizes learning.
+### How to Navigate the Curriculum
 
-## Communities
+The curriculum follows a deliberate conceptual arc that moves from broad social and ethical context into technical systems, ending with operational management:
+
+- **Foundations, Ethics, and Human Context:** Begin with *Foundations of Library and Information Studies*, *Information Ethics, Policy, and Intellectual Freedom*, *Information Behavior and User Needs*, and *Information Literacy and Instruction*. These subjects establish the field's professional values, legal landscape (including censorship, copyright, and patron confidentiality), and the cognitive models explaining how individuals encounter and resolve knowledge gaps.
+- **Technical Architecture and Retrieval:** Next, advance through *Organization of Information*, *Metadata and Knowledge Representation*, and *Information Retrieval*. These subjects should be studied sequentially. *Organization of Information* covers the principles of bibliographic control and classification systems (such as Dewey Decimal and Library of Congress Classification) that underpin modern cataloging. *Metadata and Knowledge Representation* builds directly on these fundamentals to examine schema design, vocabularies, and linked data. *Information Retrieval* explores the algorithmic engines, indexing mechanics, and relevance metrics that make these organized resources searchable.
+- **Public Services and Administration:** Conclude with *Reference and Information Services*, *Collection Development and Management*, and *Library Management and Administration*. These subjects address daily institutional operations: conducting reference interviews, assessing community information needs, licensing digital resources, evaluating collections, and managing budgets, facilities, and personnel.
+
+### Scope
+
+This curriculum represents the shared foundational core of Library and Information Studies — the central competencies and mental models every serious practitioner or scholar in the field must grasp before specializing. It intentionally leaves out niche subfields, advanced digital forensics, and specialized informatics. 
+
+Once you have completed this foundational core, you can extend your studies across the other resources in this series:
+
+- Explore specialized subfields such as archival appraisal, research data curation, information architecture, and critical algorithmic studies in [Advanced Topics](advanced_topics.md).
+- Engage with landmark theoretical papers and field-defining monographs in [Readings](extras/readings.md).
+- Watch full-length university lectures and interactive professional webinars in [Courses](extras/courses.md).
+
+### Communities
 
 - Subreddits:
     - [r/librarians](https://www.reddit.com/r/librarians/)
@@ -30,7 +46,6 @@ This subject introduces the history and mission of knowledge institutions, core 
 
 LiFT: Public Library Fundamentals (WebJunction / Idaho Commission for Libraries) - A free, self-paced interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that provides an accessible, practical on-ramp covering core library missions and front-line professional ethics before or alongside Rubin and Rubin.
 
-
 ### Information Ethics, Policy, and Intellectual Freedom
 
 This subject examines the legal and philosophical principles governing information access, including censorship, intellectual property, user privacy, and professional codes of ethics.
@@ -38,7 +53,6 @@ This subject examines the legal and philosophical principles governing informati
 [Foundations of Information Ethics (ALA Neal-Schuman / John T. F. Burgess & Emily J. M. Knox, eds.)](https://books.google.com/books?isbn=9780838917244) - The core conceptual text exploring philosophical frameworks, intellectual freedom, user privacy, information poverty, and copyright policy.
 
 ABLE 12: Ethics and Public Service (Idaho Commission for Libraries / WebJunction) - A practical, self-paced tutorial (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based complement to Burgess and Knox, focusing on daily ethical dilemmas, patron confidentiality, and equitable service policies.
-
 
 ### Information Behavior and User Needs
 
@@ -48,7 +62,6 @@ This subject investigates how people experience information needs, seek out know
 
 [INFideos: Information Science Video Series (YouTube / Dr. Jenna Hartel)](https://www.youtube.com/@INFideos) - An open university video series providing intuitive, visual walkthroughs of landmark behavioral models (such as Kuhlthau's Information Search Process and Bates's berrypicking), designed as an accessible visual entry point before tackling Given, Case, and Willson.
 
-
 ### Information Literacy and Instruction
 
 This subject teaches the pedagogical theories, instructional design principles, and assessment strategies required to teach patrons how to discover, evaluate, and critically utilize information.
@@ -56,7 +69,6 @@ This subject teaches the pedagogical theories, instructional design principles, 
 [Instruction in Libraries and Information Centers: An Introduction (Windsor & Downs Press / Laura Saunders & Melissa A. Wong)](https://iopn.library.illinois.edu/pressbooks/instructioninlibraries/) - A comprehensive open-access textbook focusing on teaching pedagogy, backward instructional design, learning theories, and lesson delivery for information professionals.
 
 [The Information Literacy User’s Guide: An Open, Online Textbook (Milne Open Textbooks / Greg Bobish & Trudi Jacobson, eds.)](https://milneopentextbooks.org/the-information-literacy-users-guide-an-open-online-textbook/) - A complementary open textbook structured around the Seven Pillars of Information Literacy, providing practical learner-facing exercises on search formulation and critical evaluation that directly inform what librarians teach.
-
 
 ### Organization of Information
 
@@ -68,7 +80,6 @@ This subject focuses on the theoretical principles and standardized practices us
 
 LiFT: Library Catalog Series (WebJunction / Idaho Commission for Libraries) - A free four-course training track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that provides hands-on practical exercises in deciphering call numbers, subject headings, and copy cataloging to ground the theory learned in either textbook.
 
-
 ### Metadata and Knowledge Representation
 
 This subject covers schemas, data models, controlled vocabularies, and linked data frameworks used to structure digital assets and bibliographic relationships.
@@ -76,7 +87,6 @@ This subject covers schemas, data models, controlled vocabularies, and linked da
 [Introduction to Metadata (Getty Publications / Murtha Baca, ed.)](https://www.getty.edu/publications/intrometadata/) - A concise, freely accessible open-access primer that serves as an introductory stepping stone focusing on metadata types, crosswalks, and practical curation principles for digital cultural collections.
 
 [Metadata (ALA Neal-Schuman / Marcia Lei Zeng & Jian Qin)](https://books.google.com/books?isbn=9780838917275) - A comprehensive follow-up textbook to Baca covering advanced metadata architecture, schema design, XML/RDF encoding standards, and Semantic Web implementations.
-
 
 ### Information Retrieval
 
@@ -88,7 +98,6 @@ This subject explores the technical and conceptual mechanics of search systems, 
 
 [Information Retrieval Lecture Series (University of Freiburg / Prof. Dr. Hannah Bast)](https://ad-wiki.informatik.uni-freiburg.de/teaching/InformationRetrievalWS2223) - A complete university video lecture series with slides and problem sets covering search engine mechanics, serving as a video-based lecture alternative to the Manning textbook.
 
-
 ### Reference and Information Services
 
 This subject details the methods of conducting reference interviews, constructing specialized search queries, navigating reference sources, and delivering user assistance.
@@ -97,7 +106,6 @@ This subject details the methods of conducting reference interviews, constructin
 
 LiFT: The Reference Interview (WebJunction / Idaho Commission for Libraries) - A free interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based companion to Wong and Saunders, training learners in active listening and query negotiation.
 
-
 ### Collection Development and Management
 
 This subject addresses the lifecycle of library collections, including community needs assessment, selection criteria, acquisition models, licensing, collection evaluation, and deaccessioning.
@@ -105,7 +113,6 @@ This subject addresses the lifecycle of library collections, including community
 [Fundamentals of Collection Development and Management (ALA Editions / Peggy Johnson)](https://books.google.com/books?isbn=9780838916414) - The definitive professional textbook addressing collection policies, budgeting, vendor relations, electronic resource licensing, and preservation workflows.
 
 LiFT: Collection Management Series (WebJunction / Idaho Commission for Libraries) - A free six-part self-paced course track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that serves as a practical, workflow-oriented companion to Johnson, walking learners through selection, ordering, collection assessment, and weeding.
-
 
 ### Library Management and Administration
 
