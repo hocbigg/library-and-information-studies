@@ -1,165 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/library-and-information-studies/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/">
+  <link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/library-and-information-studies/">Library-And-Information-Studies</a>
-<a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a>
-<a href="/library-and-information-studies/extras/courses.html">Extra Courses</a>
-<a href="/library-and-information-studies/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/library-and-information-studies/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/library-and-information-studies/">Library And Information Studies</a></li>
+      <li><a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/library-and-information-studies/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/library-and-information-studies/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/library-and-information-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
-<p>After completing the Core, you can pick one or more of the remaining sections depending on the direction you want to explore:</p>
+<p>After completing the Core Undergraduate Curriculum, learners can specialize in one or more advanced tracks depending on their professional and research goals:</p>
 <ul>
-<li><strong>Management, Research, and Professional Practice</strong>: Choose this if you are interested in leading libraries, managing teams, doing research, or understanding the business and policy side of information organizations.</li>
-<li><strong>Digital, Data, and Technical LIS</strong>: Choose this if you want to work with technology, digital collections, databases, user experience design, or research data.</li>
-<li><strong>Archives, Records, and Preservation</strong>: Choose this if you are drawn to historical materials, recordkeeping, archives, or long-term preservation of physical and digital items.</li>
-<li><strong>Specialized and Community Services</strong>: Choose this if you want to focus on serving specific groups (children, youth, diverse communities) or on topics like open access and scholarly communication.</li>
+<li><strong>Archives, Records, and Special Collections Stewardship</strong>: Focuses on the appraisal, arrangement, description, physical conservation, and digital preservation of enduring institutional records and cultural heritage materials.</li>
+<li><strong>Research Data Curation, Semantic Technologies, and Informetrics</strong>: Explores research data management lifecycles, knowledge graph construction, ontologies, bibliometric network analysis, and computational workflows for data librarians.</li>
+<li><strong>Information Architecture, Discovery Systems, and Search UX</strong>: Concentrates on structuring digital information spaces, engineering faceted classification taxonomies, designing intuitive search interfaces, and applying ethnographic usability methods.</li>
+<li><strong>Scholarly Communication, Critical Informatics, and Information Policy</strong>: Examines open science ecosystems, copyright and fair use doctrine, the political economy of academic publishing, algorithmic injustice, and state information policy.</li>
+<li><strong>Specialized Librarianship and Critical Information Practice</strong>: Covers anti-oppressive instruction, culturally sustaining community services, health sciences informatics, and legal information research.</li>
 </ul>
-<h2 id="management-research-and-professional-practice">Management, Research, and Professional Practice</h2>
-<p>Running and improving information organizations.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Library Management</td>
-<td><em>Management Basics for Information Professionals – Evans &amp; Greenwell</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.webjunction.org/">Library Leadership &amp; Management (WebJunction)</a></strong></td>
-</tr>
-<tr>
-<td>Research Methods in LIS</td>
-<td><em>Basic Research Methods for Librarians – Connaway &amp; Powell</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://journals.library.ualberta.ca/eblip/">Evidence-Based Library &amp; Information Practice (open journal)</a></strong></td>
-</tr>
-<tr>
-<td>Policy, Law, and Ethics</td>
-<td>Rubin (ethics chapters)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.loc.gov/programs/copyright-for-librarians/">Copyright for Librarians (Library of Congress)</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="digital-data-and-technical-lis">Digital, Data, and Technical LIS</h2>
-<p>Technology-mediated information systems.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Digital Libraries</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/digitallibraries0000arms">Digital Libraries – William Y. Arms (Archive.org)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@ischooluiuc">Digital Libraries Lectures (UIUC, YouTube)</a></strong></td>
-</tr>
-<tr>
-<td>Information Architecture &amp; UX</td>
-<td><em>Information Architecture for the Web and Beyond – Rosenfeld et al.</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.niso.org/">UX for Librarians (NISO)</a></strong></td>
-</tr>
-<tr>
-<td>Databases for LIS</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://opentextbc.ca/dbdesign01/">Database Design – Adrienne Watt (open textbook)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://opentextbc.ca/dbdesign01/">OpenTextbook: Database Design</a></strong></td>
-</tr>
-<tr>
-<td>Research Data Management</td>
-<td><em>Research Data Management – Pryor et al. (open access)</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.data-archive.ac.uk/teach/teaching-resources">RDM Toolkit (UK Data Service)</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="archives-records-and-preservation">Archives, Records, and Preservation</h2>
-<p>Parallel traditions in information stewardship.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Archival Principles</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www2.archivists.org/sites/all/files/Arranging-and-Describing-Archives-and-Manuscripts.pdf">Arranging and Describing Archives and Manuscripts – Roe (free PDF)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www2.archivists.org/education">Society of American Archivists Tutorials</a></strong></td>
-</tr>
-<tr>
-<td>Records Management</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/recordmanagement0000read">Records Management – Read &amp; Ginn (Archive.org)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.archives.gov/records-mgmt/training/online-lessons">NARA Records Management Lessons</a></strong></td>
-</tr>
-<tr>
-<td>Preservation (Physical &amp; Digital)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.dpconline.org/handbook">Digital Preservation Handbook – Digital Preservation Coalition (free)</a></strong></td>
-<td>Same handbook</td>
-</tr>
-</tbody>
-</table>
-<h2 id="specialized-and-community-services">Specialized and Community Services</h2>
-<p>Focused service domains.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Services to Diverse Populations</td>
-<td><em>Information Services to Diverse Populations – Nicole A. Cooke</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ala.org/tools/diversity">Equity, Diversity &amp; Inclusion (ALA)</a></strong></td>
-</tr>
-<tr>
-<td>Youth Services</td>
-<td><em>Children’s Literature in Action – Vardell</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ala.org/yalsa/guidelines">Youth Services Competencies (YALSA)</a></strong></td>
-</tr>
-<tr>
-<td>Scholarly Communication</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://open-access.net/">Open Access – Peter Suber (free online)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://sparcopen.org/">SPARC Open Education Resources</a></strong></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="archives-records-and-special-collections-stewardship">Archives, Records, and Special Collections Stewardship</h2>
+<p>This track covers the theoretical principles and practical workflows required to appraise, process, preserve, and provide long-term access to physical and born-digital archival records.</p>
+<p>Archival Arrangement and Description: <a href="https://books.google.com/books?isbn=9781945246074" target="_blank" rel="noopener noreferrer">Arranging and Describing Archives and Manuscripts (Society of American Archivists / Dennis Meissner)</a> - The canonical manual on processing workflows, provenance, original order, and multi-level archival descriptive standards.</p>
+<p>Archival Arrangement and Description: <a href="https://www2.archivists.org/standards/DACS" target="_blank" rel="noopener noreferrer">Describing Archives: A Content Standard (DACS) (Society of American Archivists)</a> - The official, open-access content standard governing the creation of finding aids and catalog records for archival collections.</p>
+<p>Digital Preservation: <a href="https://www.dpconline.org/handbook" target="_blank" rel="noopener noreferrer">Digital Preservation Handbook (Digital Preservation Coalition)</a> - An authoritative, modular open guide detailing file format migrations, fixity checking, bitstream preservation, and OAIS repository design.</p>
+<p>Records Management and Governance: <a href="https://www.archives.gov/records-mgmt/training" target="_blank" rel="noopener noreferrer">NARA Records Management Training (US National Archives and Records Administration)</a> - Free, structured self-paced training modules addressing retention scheduling, disposition authorization, and compliance workflows.</p>
+<p>Records Management and Governance: <a href="https://books.google.com/books?isbn=9798892555883" target="_blank" rel="noopener noreferrer">Records and Information Management (ALA Neal-Schuman / Patricia C. Franks)</a> - The comprehensive benchmark text covering information governance structures, electronic records management systems (ERMS), and legal risk mitigation.</p>
+<p>Special Collections and Material Preservation: <a href="https://www.nedcc.org/free-resources/preservation-leaflets/overview" target="_blank" rel="noopener noreferrer">Preservation Leaflets (Northeast Document Conservation Center)</a> - A rigorous open-access technical manual covering storage environments, paper conservation, disaster salvage, and physical reformatting.</p>
+<h2 id="research-data-curation-semantic-technologies-and-informetrics">Research Data Curation, Semantic Technologies, and Informetrics</h2>
+<p>This track addresses the stewardship of scientific data lifecycles, the construction of linked semantic data graphs, and quantitative evaluations of academic scholarship.</p>
+<p>Research Data Management: <a href="https://www.coursera.org/learn/data-management" target="_blank" rel="noopener noreferrer">Research Data Management and Sharing (Coursera / University of North Carolina at Chapel Hill &amp; University of Edinburgh)</a> - A five-week open-audit course covering data management plans (DMPs), repository deposit requirements, metadata documentation, and data sharing ethics.</p>
+<p>Knowledge Graphs and Semantic Web Modeling: <a href="https://open.hpi.de/courses/knowledgegraphs2020" target="_blank" rel="noopener noreferrer">Knowledge Graphs - Foundations and Applications (openHPI / Prof. Dr. Harald Sack)</a> - A comprehensive, video-based MOOC examining Resource Description Framework (RDF), SPARQL query construction, and OWL ontology engineering.</p>
+<p>Bibliometrics and Scientometrics: <a href="https://books.google.com/books?isbn=9780810867130" target="_blank" rel="noopener noreferrer">Bibliometrics and Citation Analysis: From the Science Citation Index to Cybermetrics (Scarecrow Press / Nicola De Bellis)</a> - The foundational monograph on mathematical citation models, journal impact metrics, h-index formulations, and author cocitation networks.</p>
+<p>Bibliometrics and Scientometrics: <a href="http://www.leidenmanifesto.org/" target="_blank" rel="noopener noreferrer">The Leiden Manifesto for Research Metrics (Leiden University / Diana Hicks et al.)</a> - A foundational open framework outlining ten operational principles for the responsible, non-mechanistic evaluation of scientific performance.</p>
+<p>Computational Data Librarianship: <a href="https://librarycarpentry.org/lessons/" target="_blank" rel="noopener noreferrer">Library Carpentry Lessons (The Carpentries)</a> - A hands-on, modular curriculum teaching librarians reproducible computational workflows using the Unix command line, OpenRefine, Git, and Python.</p>
+<h2 id="information-architecture-discovery-systems-and-search-ux">Information Architecture, Discovery Systems, and Search UX</h2>
+<p>This track explores the design, organization, and behavioral usability of digital systems, specialized discovery layers, and user search journeys.</p>
+<p>Information Architecture and Taxonomy Engineering: <a href="https://books.google.com/books?isbn=9781491911686" target="_blank" rel="noopener noreferrer">Information Architecture: For the Web and Beyond (O'Reilly Media / Louis Rosenfeld, Peter Morville, &amp; Jorge Arango)</a> - The definitive guide to organizing digital collections, labeling systems, site topologies, and controlled taxonomies for complex websites.</p>
+<p>Search User Interfaces and Faceted Navigation: <a href="https://searchuserinterfaces.com/" target="_blank" rel="noopener noreferrer">Search User Interfaces (Cambridge University Press / Marti A. Hearst)</a> - A seminal, freely accessible open textbook examining the cognitive models, layout dynamics, query reformulation patterns, and faceted filters that guide human interaction with search engines.</p>
+<p>Library User Experience and Usability: <a href="https://books.google.com/books?isbn=9781472484727" target="_blank" rel="noopener noreferrer">User Experience in Libraries: Applying Ethnography and Human-Centred Design (Routledge / Andy Priestner &amp; Matt Borg, eds.)</a> - An applied volume detailing ethnographic field research, behavioral mapping, space auditing, and user-centered design methodologies in library environments.</p>
+<p>Human-Information Interaction: <a href="https://books.google.com/books?isbn=9780521586566" target="_blank" rel="noopener noreferrer">Information Seeking in Electronic Environments (Cambridge University Press / Gary Marchionini)</a> - An advanced theoretical work exploring exploratory search, mental modeling, interface affordances, and cognitive feedback loops in electronic retrieval systems.</p>
+<h2 id="scholarly-communication-critical-informatics-and-information-policy">Scholarly Communication, Critical Informatics, and Information Policy</h2>
+<p>This track examines the legal, political, and socio-technical forces governing global information flows, scholarly publishing systems, copyright, and algorithmic infrastructure.</p>
+<p>Scholarly Communication and Open Access: <a href="https://mitpress.mit.edu/9780262517638/open-access/" target="_blank" rel="noopener noreferrer">Open Access (MIT Press / Peter Suber)</a> - An open-access volume analyzing green and gold publishing models, open licensing, author rights retention, and the economic structure of scholarly distribution.</p>
+<p>Copyright and Fair Use: <a href="https://copyx.org/" target="_blank" rel="noopener noreferrer">CopyrightX (Harvard Law School &amp; Berkman Klein Center / Prof. William Fisher)</a> - A 12-week open lecture series and curriculum exploring statutory copyright, judicial fair use doctrine, licensing, and library reproduction exemptions under Section 108.</p>
+<p>Copyright and Fair Use: <a href="https://books.google.com/books?isbn=9780838916292" target="_blank" rel="noopener noreferrer">Copyright Law for Librarians and Educators: Creative Strategies and Practical Solutions (ALA Editions / Kenneth D. Crews)</a> - A practical legal manual examining fair use risk assessments, interlibrary loan guidelines, reserve systems, and institutional digital lending.</p>
+<p>Critical Data Studies and Algorithmic Equity: <a href="https://books.google.com/books?isbn=9781479837243" target="_blank" rel="noopener noreferrer">Algorithms of Oppression: How Search Engines Reinforce Racism (NYU Press / Safiya Umoja Noble)</a> - A critical investigation into commercial search engines, showing how algorithmic architectures and indexing biases perpetuate systemic social discrimination.</p>
+<p>Critical Data Studies and Algorithmic Equity: <a href="https://books.google.com/books?isbn=9780262522953" target="_blank" rel="noopener noreferrer">Sorting Things Out: Classification and Its Consequences (MIT Press / Geoffrey C. Bowker &amp; Susan Leigh Star)</a> - A foundational social science monograph analyzing how classification systems, categories, and descriptive standards exert invisible institutional power.</p>
+<p>Information Policy and Digital Governance: <a href="https://books.google.com/books?isbn=9780262513241" target="_blank" rel="noopener noreferrer">Change of State: Information, Policy, and Power (MIT Press / Sandra Braman)</a> - A comprehensive theoretical treatise defining information policy regimes, telecommunications law, surveillance, and state informational power.</p>
+<h2 id="specialized-librarianship-and-critical-information-practice">Specialized Librarianship and Critical Information Practice</h2>
+<p>This track investigates domain-specific information environments alongside critical pedagogy and community-centered service models.</p>
+<p>Critical Librarianship and Culturally Sustaining Practice: <a href="https://books.google.com/books?isbn=9781440834608" target="_blank" rel="noopener noreferrer">Information Services to Diverse Populations: Developing Culturally Competent Library Professionals (Libraries Unlimited / Nicole A. Cooke)</a> - A foundational framework for applying cultural humility, intersectionality, and anti-racist praxis to library outreach, collections, and service design.</p>
+<p>Critical Library Pedagogy: <a href="https://books.google.com/books?isbn=9780838988466" target="_blank" rel="noopener noreferrer">Critical Library Pedagogy Handbook (ACRL / Nicole Pagowsky &amp; Kelly McElroy, eds.)</a> - A two-volume collection of theoretical essays and classroom lesson plans applying critical educational theory and social justice frameworks to information literacy instruction.</p>
+<p>Health Sciences Informatics: <a href="https://www.nlm.nih.gov/oet/ed/pubmed/pubmed_in_ebp/" target="_blank" rel="noopener noreferrer">Using PubMed in Evidence-Based Practice Training Course (National Library of Medicine)</a> - A structured, free interactive course covering clinical question framing using PICO, Medical Subject Headings (MeSH) mapping, and clinical search strategies.</p>
+<p>Health Sciences Informatics: <a href="https://books.google.com/books?isbn=9780789035967" target="_blank" rel="noopener noreferrer">Introduction to Health Sciences Librarianship (Routledge / M. Sandra Wood, ed.)</a> - A specialized textbook detailing clinical information environments, hospital library operations, biomedical collection management, and systematic review consulting.</p>
+<p>Legal Information and Law Librarianship: <a href="https://pressbooks.pub/lawlibrarianship/" target="_blank" rel="noopener noreferrer">Introduction to Law Librarianship (Pressbooks / Zanada Joyner &amp; Cas Laskowski, eds.)</a> - A peer-reviewed, open-access textbook examining primary and secondary legal sources, statutory and regulatory research paths, court records, and law library administration.</p>
+    </article>
+  </main>
 
 </body>
 </html>

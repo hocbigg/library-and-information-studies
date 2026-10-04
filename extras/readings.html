@@ -1,122 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/library-and-information-studies/style.css">
-<meta name="description" content="">
+  <title>Great Readings</title>
+  <meta name="description" content="Great Readings curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/">
+  <link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/extras/readings.html">
+  <meta property="og:title" content="Great Readings">
+  <meta property="og:description" content="Great Readings curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/library-and-information-studies/">Library-And-Information-Studies</a>
-<a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a>
-<a href="/library-and-information-studies/extras/courses.html">Extra Courses</a>
-<a href="/library-and-information-studies/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/library-and-information-studies/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/library-and-information-studies/">Library And Information Studies</a></li>
+      <li><a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/library-and-information-studies/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/library-and-information-studies/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/library-and-information-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Library and Information Studies.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="general-and-foundations">General and Foundations</h2>
-<table>
+<p>This collection brings together seminal monographs, paradigm-defining essays, and landmark theoretical papers in Library and Information Studies (LIS). Rather than introductory textbooks, these works represent milestone breakthroughs that have shaped how we conceptualize information, knowledge organization, human sensemaking, and cultural memory.</p>
+<h2 id="philosophical-foundations-and-disciplinary-paradigms">Philosophical Foundations and Disciplinary Paradigms</h2>
+<p>Foundational texts that defined the social mission, philosophy, and ontological nature of information and librarianship.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Atlas-New-Librarianship-David-Lankes/dp/0262015099">The Atlas of New Librarianship</a></td>
-<td style="text-align: center;">David Lankes</td>
+<td><a href="https://archive.org/details/in.ernet.dli.2015.283188" target="_blank" rel="noopener noreferrer"><em>The Five Laws of Library Science</em></a></td>
+<td>S. R. Ranganathan</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Librarians-Career-Guidebook-Priscilla-Shontz/dp/0810858346">The Librarian's Career Guidebook</a></td>
-<td style="text-align: center;">Priscilla K. Shontz (editor)</td>
+<td><a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" target="_blank" rel="noopener noreferrer"><em>As We May Think</em></a></td>
+<td>Vannevar Bush</td>
+</tr>
+<tr>
+<td><a href="https://escholarship.org/uc/item/5400b22s" target="_blank" rel="noopener noreferrer"><em>Information as Thing</em></a></td>
+<td>Michael K. Buckland</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780471785408" target="_blank" rel="noopener noreferrer"><em>The Foundations of Education for Librarianship</em></a></td>
+<td>Jesse H. Shera</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780838907856" target="_blank" rel="noopener noreferrer"><em>Our Enduring Values: Librarianship in the 21st Century</em></a></td>
+<td>Michael Gorman</td>
+</tr>
+<tr>
+<td><a href="https://davidlankes.org/" target="_blank" rel="noopener noreferrer"><em>The Atlas of New Librarianship</em></a></td>
+<td>R. David Lankes</td>
 </tr>
 </tbody>
-</table>
-<h2 id="digital-libraries-and-technology">Digital Libraries and Technology</h2>
-<table>
+</table></div>
+<h2 id="classification-power-and-critical-information-studies">Classification, Power, and Critical Information Studies</h2>
+<p>Works exploring how bibliographic systems, taxonomies, and automated data structures encode social values, power dynamics, and structural biases.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Exploring-Digital-Libraries-Foundations-Prospects/dp/1856048209">Exploring Digital Libraries: Foundations, Practice, Prospects</a></td>
-<td style="text-align: center;">Karen Calhoun</td>
+<td><a href="https://books.google.com/books?isbn=9780262522953" target="_blank" rel="noopener noreferrer"><em>Sorting Things Out: Classification and Its Consequences</em></a></td>
+<td>Geoffrey C. Bowker and Susan Leigh Star</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Understanding-Digital-Libraries-Michael-Leslie/dp/0124557255">Understanding Digital Libraries</a></td>
-<td style="text-align: center;">Michael Lesk (free PDF available via author site or archives)</td>
+<td><a href="https://archive.org/details/prejudicesantipa0000berm" target="_blank" rel="noopener noreferrer"><em>Prejudices and Antipathies: A Tract on the LC Subject Heads Concerning People</em></a></td>
+<td>Sanford Berman</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781402007767" target="_blank" rel="noopener noreferrer"><em>The Power to Name: Locating the Limits of Subject Representation in Modern Classification</em></a></td>
+<td>Hope A. Olson</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781479837243" target="_blank" rel="noopener noreferrer"><em>Algorithms of Oppression: How Search Engines Reinforce Racism</em></a></td>
+<td>Safiya Umoja Noble</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781509526406" target="_blank" rel="noopener noreferrer"><em>Race After Technology: Abolitionist Tools for the New Jim Code</em></a></td>
+<td>Ruha Benjamin</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781442246102" target="_blank" rel="noopener noreferrer"><em>Book Banning in 21st-Century America</em></a></td>
+<td>Emily J. M. Knox</td>
 </tr>
 </tbody>
-</table>
-<h2 id="archives-and-preservation">Archives and Preservation</h2>
-<table>
+</table></div>
+<h2 id="human-information-interaction-and-sensemaking">Human Information Interaction and Sensemaking</h2>
+<p>Pioneering empirical and cognitive models analyzing how people experience, formulate, search for, and use information.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.archivists.org/sites/all/files/ModernArchivesReader.pdf">Modern Archives Administration and Records Management</a></td>
-<td style="text-align: center;">Various (free SAA reader)</td>
+<td><a href="https://crl.acrl.org/index.php/crl/article/view/11888" target="_blank" rel="noopener noreferrer"><em>Question-Negotiation and Information Seeking in Libraries</em></a></td>
+<td>Robert S. Taylor</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Preserving-Digital-Materials-Ross-Harvey/dp/1442238716">Preserving Digital Materials</a></td>
-<td style="text-align: center;">Ross Harvey</td>
+<td><a href="https://pages.gseis.ucla.edu/faculty/bates/berrypicking.html" target="_blank" rel="noopener noreferrer"><em>The Design of Browsing and Berrypicking Techniques for the Online Search Interface</em></a></td>
+<td>Marcia J. Bates</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781591580942" target="_blank" rel="noopener noreferrer"><em>Seeking Meaning: A Process Approach to Library and Information Services</em></a></td>
+<td>Carol C. Kuhlthau</td>
+</tr>
+<tr>
+<td><a href="http://informationr.net/tdw/publ/papers/1999JDoc.html" target="_blank" rel="noopener noreferrer"><em>Models in Information Behaviour Research</em></a></td>
+<td>T. D. Wilson</td>
+</tr>
+<tr>
+<td><a href="https://scispace.com/papers/information-needs-and-uses-3jtsz4agfg" target="_blank" rel="noopener noreferrer"><em>Information Needs and Uses</em></a></td>
+<td>Brenda Dervin and Michael Nilan</td>
+</tr>
+<tr>
+<td><a href="https://surface.syr.edu/cgi/viewcontent.cgi?params=/context/istpub/article/1150/&amp;path_info=ASK_FOR_INFORMATION_RETRIEVAL_part_1.pdf" target="_blank" rel="noopener noreferrer"><em>ASK for Information Retrieval: Part I. Background and Theory</em></a></td>
+<td>Nicholas J. Belkin, Robert N. Oddy, and H. M. Brooks</td>
 </tr>
 </tbody>
-</table>
-<h2 id="user-services-and-ethics">User Services and Ethics</h2>
-<table>
+</table></div>
+<h2 id="retrieval-systems-network-architecture-and-document-theory">Retrieval Systems, Network Architecture, and Document Theory</h2>
+<p>Theoretical and structural foundations governing how information is bounded, structured, indexed, and navigated across digital networks.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th>Title</th>
+<th>Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Information-Services-Today-Introduction-Sandra/dp/1538102996">Information Services Today: An Introduction</a></td>
-<td style="text-align: center;">Sandra Hirsh (editor)</td>
+<td><a href="https://archive.org/details/traitededocument00otle" target="_blank" rel="noopener noreferrer"><em>Traité de documentation : le livre sur le livre, théorie et pratique</em></a></td>
+<td>Paul Otlet</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Accidental-Librarian-Pamela-H-MacKellar/dp/1573873381">The Accidental Librarian</a></td>
-<td style="text-align: center;">Pamela H. MacKellar</td>
+<td><a href="https://books.google.com/books?isbn=9780810851092" target="_blank" rel="noopener noreferrer"><em>What is Documentation?</em></a></td>
+<td>Suzanne Briet (translated by Ronald E. Day and Laurent Martinet)</td>
+</tr>
+<tr>
+<td><a href="https://people.ischool.berkeley.edu/~buckland/whatdoc.html" target="_blank" rel="noopener noreferrer"><em>What is a "document"?</em></a></td>
+<td>Michael K. Buckland</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/bstj27-3-379" target="_blank" rel="noopener noreferrer"><em>A Mathematical Theory of Communication</em></a></td>
+<td>Claude E. Shannon</td>
+</tr>
+<tr>
+<td><a href="https://archive.org/details/librariesoffutur00lick" target="_blank" rel="noopener noreferrer"><em>Libraries of the Future</em></a></td>
+<td>J. C. R. Licklider</td>
+</tr>
+<tr>
+<td><a href="https://www.academia.edu/2820774/Relevance_A_review_of_the_literature_and_a_framework_for_thinking_on_the_notion_in_information_science_Part_II_nature_and_manifestations_of_relevance" target="_blank" rel="noopener noreferrer"><em>Relevance: A Review of the Literature and a Framework for Thinking on the Notion in Information Science</em></a></td>
+<td>Tefko Saracevic</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="archives-materiality-and-cultural-memory">Archives, Materiality, and Cultural Memory</h2>
+<p>Essential treatises on the preservation of digital artifacts, the philosophical nature of archives, and institutional memory.</p>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://archivaria.ca/index.php/archivaria/article/view/12175" target="_blank" rel="noopener noreferrer"><em>What is Past is Prologue: A History of Archival Ideas Since 1898, and the Future Paradigm Shift</em></a></td>
+<td>Terry Cook</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780226143675" target="_blank" rel="noopener noreferrer"><em>Archive Fever: A Freudian Impression</em></a></td>
+<td>Jacques Derrida</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780262113112" target="_blank" rel="noopener noreferrer"><em>Mechanisms: New Media and the Forensic Imagination</em></a></td>
+<td>Matthew G. Kirschenbaum</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9781586488260" target="_blank" rel="noopener noreferrer"><em>The Case for Books: Past, Present, and Future</em></a></td>
+<td>Robert Darnton</td>
+</tr>
+<tr>
+<td><a href="https://books.google.com/books?isbn=9780299297541" target="_blank" rel="noopener noreferrer"><em>Archiving the Unspeakable: Silence, Memory, and the Photographic Record in Cambodia</em></a></td>
+<td>Michelle Caswell</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>

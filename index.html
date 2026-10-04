@@ -1,226 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Library and Information Studies</title>
-<link rel="stylesheet" href="/library-and-information-studies/style.css">
-<meta name="description" content="Path to a free self-taught education in Library and Information Studies!">
+  <title>Hocbigg - Library and Information Studies</title>
+  <meta name="description" content="Path to a free self-taught education in Library and Information Studies!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/">
+  <link rel="canonical" href="https://hocbigg.github.io/library-and-information-studies/">
+  <meta property="og:title" content="Hocbigg - Library and Information Studies">
+  <meta property="og:description" content="Path to a free self-taught education in Library and Information Studies!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Library and Information Studies">
-<meta property="og:description" content="Path to a free self-taught education in Library and Information Studies!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/library-and-information-studies/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/library-and-information-studies/">Library-And-Information-Studies</a>
-<a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a>
-<a href="/library-and-information-studies/extras/courses.html">Extra Courses</a>
-<a href="/library-and-information-studies/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/library-and-information-studies/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/library-and-information-studies/">Library And Information Studies</a></li>
+      <li><a href="/library-and-information-studies/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/library-and-information-studies/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/library-and-information-studies/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/library-and-information-studies" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Library and Information Studies</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Library and Information Studies!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-01">2026-10-01</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Library and Information Studies (LIS) investigates how human societies record, organize, retrieve, evaluate, and preserve knowledge. The discipline sits at the intersection of human behavior, technical systems, and democratic stewardship — examining not just how information systems function, but how people interact with them and how institutions protect equitable access to knowledge. Whether you are exploring a career transition into the information professions, looking to manage cultural or organizational knowledge, or simply seeking to understand the architecture of recorded information, this curriculum provides a self-contained foundation for self-directed study.</p>
+<p>No prior background in library science, computer science, or archival studies is required. All materials are chosen for independent learners studying without institutional support, proprietary databases, or classroom instruction. Most subjects pair a comprehensive, canonical text with an open-access textbook, lecture series, or free self-paced training module from professional library bodies.</p>
+<h3 id="how-to-navigate-the-curriculum">How to Navigate the Curriculum</h3>
+<p>The curriculum follows a deliberate conceptual arc that moves from broad social and ethical context into technical systems, ending with operational management:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Foundations, Ethics, and Human Context:</strong> Begin with <em>Foundations of Library and Information Studies</em>, <em>Information Ethics, Policy, and Intellectual Freedom</em>, <em>Information Behavior and User Needs</em>, and <em>Information Literacy and Instruction</em>. These subjects establish the field's professional values, legal landscape (including censorship, copyright, and patron confidentiality), and the cognitive models explaining how individuals encounter and resolve knowledge gaps.</li>
+<li><strong>Technical Architecture and Retrieval:</strong> Next, advance through <em>Organization of Information</em>, <em>Metadata and Knowledge Representation</em>, and <em>Information Retrieval</em>. These subjects should be studied sequentially. <em>Organization of Information</em> covers the principles of bibliographic control and classification systems (such as Dewey Decimal and Library of Congress Classification) that underpin modern cataloging. <em>Metadata and Knowledge Representation</em> builds directly on these fundamentals to examine schema design, vocabularies, and linked data. <em>Information Retrieval</em> explores the algorithmic engines, indexing mechanics, and relevance metrics that make these organized resources searchable.</li>
+<li><strong>Public Services and Administration:</strong> Conclude with <em>Reference and Information Services</em>, <em>Collection Development and Management</em>, and <em>Library Management and Administration</em>. These subjects address daily institutional operations: conducting reference interviews, assessing community information needs, licensing digital resources, evaluating collections, and managing budgets, facilities, and personnel.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Library and Information Studies curriculum is a <strong>complete education in Library and Information Studies</strong> using online materials.</p>
-<p>The field of LIS encompasses the organization, access, preservation, and ethical management of information in diverse formats and contexts, blending theory from information science with practical applications in libraries, archives, and digital environments.</p>
-<p>The program is divided into phases with logical progression: prerequisites build foundational skills, core subjects provide essential knowledge, advanced electives allow specialization, and a capstone synthesizes learning.</p>
-<h2 id="organization">Organization</h2>
-<p>This repository is organized into 2 main components:</p>
+<h3 id="scope">Scope</h3>
+<p>This curriculum represents the shared foundational core of Library and Information Studies — the central competencies and mental models every serious practitioner or scholar in the field must grasp before specializing. It intentionally leaves out niche subfields, advanced digital forensics, and specialized informatics. </p>
+<p>Once you have completed this foundational core, you can extend your studies across the other resources in this series:</p>
 <ul>
-<li><strong>Core Curriculum</strong> (this page): the foundational knowledge of the field;</li>
-<li><strong><a href="advanced_topics.html">Advanced Topics</a></strong>: focused study in specific areas;</li>
+<li>Explore specialized subfields such as archival appraisal, research data curation, information architecture, and critical algorithmic studies in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Engage with landmark theoretical papers and field-defining monographs in <a href="extras/readings.html">Readings</a>.</li>
+<li>Watch full-length university lectures and interactive professional webinars in <a href="extras/courses.html">Courses</a>.</li>
 </ul>
-<p><strong>Process:</strong> Learners may work through the curriculum independently or collaboratively, and either sequentially or selectively.</p>
-<ul>
-<li>For simplicity, courses in the Core Curriculum are ordered according to their prerequisites.</li>
-<li>The Core Curriculum provides a shared foundation and is intended to be completed in full.</li>
-<li>Advanced Topics are optional; learners are encouraged to select one area of focus and complete all courses within that topic.</li>
-</ul>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/librarians/">r/librarians</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Libraries/">r/Libraries</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/LibraryScience/">r/LibraryScience</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/Archives/">r/Archives</a></li>
+<li><a href="https://www.reddit.com/r/librarians/" target="_blank" rel="noopener noreferrer">r/librarians</a></li>
+<li><a href="https://www.reddit.com/r/Libraries/" target="_blank" rel="noopener noreferrer">r/Libraries</a></li>
+<li><a href="https://www.reddit.com/r/LibraryScience/" target="_blank" rel="noopener noreferrer">r/LibraryScience</a></li>
+<li><a href="https://www.reddit.com/r/Archives/" target="_blank" rel="noopener noreferrer">r/Archives</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/library-and-information-studies/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/library-and-information-studies/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<h2 id="how-to-use-this-curriculum">How to use this curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>These four sections form the essential foundation of the discipline. Study them <strong>in this exact order</strong>:</p>
-<ol>
-<li>
-<p><strong>Foundations of Library and Information Studies</strong><br />
-   Start here. This section introduces the basic ideas, history, and professional identity of the field.</p>
-</li>
-<li>
-<p><strong>Information, Users, and Society</strong><br />
-   Next, learn how people actually interact with information in real life and the societal issues connected to it.</p>
-</li>
-<li>
-<p><strong>Knowledge Organization and Discovery</strong><br />
-   Then move to the methods and systems used to describe, organize, and find information – a central skill in LIS.</p>
-</li>
-<li>
-<p><strong>Library Services and Collections</strong><br />
-   Finally, understand the practical, public-facing work of libraries: helping users and building collections.</p>
-</li>
-</ol>
-<h2 id="foundations-of-library-and-information-studies">Foundations of Library and Information Studies</h2>
-<p>Core concepts, history, values, and professional identity.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Introduction to LIS</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/foundationsoflib0000rubi">Foundations of Library and Information Science – Richard E. Rubin</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://alison.com/course/introduction-to-library-and-information-science">Introduction to Library and Information Science (Alison)</a></strong></td>
-</tr>
-<tr>
-<td>History of Libraries and Knowledge Institutions</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/librariesinancie00cass">Libraries and Information in the Ancient World – Lionel Casson (Archive.org)</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ala.org/lhrt">Library History Round Table Resources (ALA)</a></strong></td>
-</tr>
-<tr>
-<td>LIS as a Profession</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/foundationsoflib0000rubi">Foundations of Library and Information Science – Rubin</a></strong></td>
-<td>Same as above</td>
-</tr>
-</tbody>
-</table>
-<h2 id="information-users-and-society">Information, Users, and Society</h2>
-<p>How people seek, use, and are shaped by information.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Information Behavior</td>
-<td><em>Looking for Information – Case &amp; Given</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@uncsils">Information Behavior Lectures (UNC SILS, YouTube)</a></strong></td>
-</tr>
-<tr>
-<td>Information Literacy</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.alastore.ala.org/content/information-literacy-instruction-handbook">Information Literacy Instruction Handbook – Cox &amp; Lindsay</a></strong></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/digital-literacy">Information &amp; Digital Literacy for University Success (Coursera)</a></strong></td>
-</tr>
-<tr>
-<td>Information Ethics &amp; Society</td>
-<td>Rubin (relevant chapters)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ala.org/tools/challengesupport/intellectualfreedom">ALA Office for Intellectual Freedom</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="knowledge-organization-and-discovery">Knowledge Organization and Discovery</h2>
-<p>Describing, structuring, and retrieving information.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Organization of Information</td>
-<td><em>Organization of Information – Taylor &amp; Joudrey</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.loc.gov/catworkshop/">Catalogers Learning Workshop (LC)</a></strong></td>
-</tr>
-<tr>
-<td>Metadata &amp; Knowledge Representation</td>
-<td><em>Metadata – Zeng &amp; Qin</em></td>
-<td>Same as above</td>
-</tr>
-<tr>
-<td>Information Retrieval</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://nlp.stanford.edu/IR-book/">Introduction to Information Retrieval – Manning et al. (free online)</a></strong></td>
-<td>Stanford IR online text</td>
-</tr>
-</tbody>
-</table>
-<h2 id="library-services-and-collections">Library Services and Collections</h2>
-<p>Public-facing and collection-centered work.</p>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course / Resource</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Reference &amp; Information Services</td>
-<td><em>Reference and Information Services – Wong &amp; Saunders</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ala.org/rusa/resources/guidelines">RUSA Guidelines (ALA)</a></strong></td>
-</tr>
-<tr>
-<td>Collection Development</td>
-<td><em>Developing Library and Information Center Collections – Evans &amp; Saponaro</em></td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.ifla.org/guidelines/">Collection Development Policies (IFLA)</a></strong></td>
-</tr>
-<tr>
-<td>User Services Assessment</td>
-<td>Connaway &amp; Powell (selected chapters)</td>
-<td><strong><a target="_blank" rel="noopener noreferrer" href="https://www.imls.gov/grants/grant-resources">IMLS Evaluation Resources</a></strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="congratulations">Congratulations</h2>
-<p>After completing the requirements of the curriculum above,
-you will have completed the equivalent of a full bachelor's degree in Library and Information Studies.
-Congratulations!</p>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="foundations-of-library-and-information-studies">Foundations of Library and Information Studies</h3>
+<p>This subject introduces the history and mission of knowledge institutions, core professional values, the lifecycle of recorded knowledge, and the institutional landscape of modern information work.</p>
+<p><a href="https://books.google.com/books?isbn=9780838947449" target="_blank" rel="noopener noreferrer">Foundations of Library and Information Science (ALA Neal-Schuman / Richard E. Rubin &amp; Rachel G. Rubin)</a> - The comprehensive foundational textbook covering library history, information society dynamics, professional values, and institutional types; serves as the primary theoretical anchor for the discipline.</p>
+<p>LiFT: Public Library Fundamentals (WebJunction / Idaho Commission for Libraries) - A free, self-paced interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that provides an accessible, practical on-ramp covering core library missions and front-line professional ethics before or alongside Rubin and Rubin.</p>
+<h3 id="information-ethics-policy-and-intellectual-freedom">Information Ethics, Policy, and Intellectual Freedom</h3>
+<p>This subject examines the legal and philosophical principles governing information access, including censorship, intellectual property, user privacy, and professional codes of ethics.</p>
+<p><a href="https://books.google.com/books?isbn=9780838917244" target="_blank" rel="noopener noreferrer">Foundations of Information Ethics (ALA Neal-Schuman / John T. F. Burgess &amp; Emily J. M. Knox, eds.)</a> - The core conceptual text exploring philosophical frameworks, intellectual freedom, user privacy, information poverty, and copyright policy.</p>
+<p>ABLE 12: Ethics and Public Service (Idaho Commission for Libraries / WebJunction) - A practical, self-paced tutorial (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based complement to Burgess and Knox, focusing on daily ethical dilemmas, patron confidentiality, and equitable service policies.</p>
+<h3 id="information-behavior-and-user-needs">Information Behavior and User Needs</h3>
+<p>This subject investigates how people experience information needs, seek out knowledge across diverse contexts, and evaluate resources to resolve cognitive gaps.</p>
+<p><a href="https://books.google.com/books?isbn=9781803824246" target="_blank" rel="noopener noreferrer">Looking for Information: Examining Research on How People Engage with Information (Emerald Publishing / Lisa M. Given, Donald O. Case, &amp; Rebekah Willson)</a> - The definitive academic survey text outlining theoretical models of information seeking, cognitive processes, and user interaction patterns.</p>
+<p><a href="https://www.youtube.com/@INFideos" target="_blank" rel="noopener noreferrer">INFideos: Information Science Video Series (YouTube / Dr. Jenna Hartel)</a> - An open university video series providing intuitive, visual walkthroughs of landmark behavioral models (such as Kuhlthau's Information Search Process and Bates's berrypicking), designed as an accessible visual entry point before tackling Given, Case, and Willson.</p>
+<h3 id="information-literacy-and-instruction">Information Literacy and Instruction</h3>
+<p>This subject teaches the pedagogical theories, instructional design principles, and assessment strategies required to teach patrons how to discover, evaluate, and critically utilize information.</p>
+<p><a href="https://iopn.library.illinois.edu/pressbooks/instructioninlibraries/" target="_blank" rel="noopener noreferrer">Instruction in Libraries and Information Centers: An Introduction (Windsor &amp; Downs Press / Laura Saunders &amp; Melissa A. Wong)</a> - A comprehensive open-access textbook focusing on teaching pedagogy, backward instructional design, learning theories, and lesson delivery for information professionals.</p>
+<p><a href="https://milneopentextbooks.org/the-information-literacy-users-guide-an-open-online-textbook/" target="_blank" rel="noopener noreferrer">The Information Literacy User’s Guide: An Open, Online Textbook (Milne Open Textbooks / Greg Bobish &amp; Trudi Jacobson, eds.)</a> - A complementary open textbook structured around the Seven Pillars of Information Literacy, providing practical learner-facing exercises on search formulation and critical evaluation that directly inform what librarians teach.</p>
+<h3 id="organization-of-information">Organization of Information</h3>
+<p>This subject focuses on the theoretical principles and standardized practices used to classify, arrange, and describe knowledge records for storage and retrieval.</p>
+<p><a href="https://books.google.com/books?isbn=9781598848588" target="_blank" rel="noopener noreferrer">The Organization of Information (Libraries Unlimited / Daniel N. Joudrey &amp; Arlene G. Taylor)</a> - The standard comprehensive textbook covering traditional bibliographic control, access points, authority control, and major classification systems like Dewey Decimal and Library of Congress.</p>
+<p><a href="https://open.umn.edu/opentextbooks/textbooks/the-discipline-of-organizing-4th-professional-edition" target="_blank" rel="noopener noreferrer">The Discipline of Organizing: 4th Professional Edition (MIT Press / Robert J. Glushko, ed.)</a> - An interdisciplinary, open-access alternative to Joudrey and Taylor that approaches organizational principles from a broader information architecture and systems perspective.</p>
+<p>LiFT: Library Catalog Series (WebJunction / Idaho Commission for Libraries) - A free four-course training track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that provides hands-on practical exercises in deciphering call numbers, subject headings, and copy cataloging to ground the theory learned in either textbook.</p>
+<h3 id="metadata-and-knowledge-representation">Metadata and Knowledge Representation</h3>
+<p>This subject covers schemas, data models, controlled vocabularies, and linked data frameworks used to structure digital assets and bibliographic relationships.</p>
+<p><a href="https://www.getty.edu/publications/intrometadata/" target="_blank" rel="noopener noreferrer">Introduction to Metadata (Getty Publications / Murtha Baca, ed.)</a> - A concise, freely accessible open-access primer that serves as an introductory stepping stone focusing on metadata types, crosswalks, and practical curation principles for digital cultural collections.</p>
+<p><a href="https://books.google.com/books?isbn=9780838917275" target="_blank" rel="noopener noreferrer">Metadata (ALA Neal-Schuman / Marcia Lei Zeng &amp; Jian Qin)</a> - A comprehensive follow-up textbook to Baca covering advanced metadata architecture, schema design, XML/RDF encoding standards, and Semantic Web implementations.</p>
+<h3 id="information-retrieval">Information Retrieval</h3>
+<p>This subject explores the technical and conceptual mechanics of search systems, indexing structures, Boolean and probabilistic algorithms, and search evaluation metrics.</p>
+<p><a href="https://books.google.com/books?isbn=9781856046947" target="_blank" rel="noopener noreferrer">Introduction to Modern Information Retrieval (Facet Publishing / G. G. Chowdhury)</a> - The primary conceptual textbook examining search interfaces, inverted files, query processing, vocabulary control, and retrieval evaluation without demanding an extensive programming background.</p>
+<p><a href="https://nlp.stanford.edu/IR-book/" target="_blank" rel="noopener noreferrer">Introduction to Information Retrieval (Cambridge University Press / Christopher D. Manning, Prabhakar Raghavan, &amp; Hinrich Schütze)</a> - An authoritative, open-access textbook offering a rigorous computational deep-dive into indexing algorithms, vector space models, and scoring for learners seeking mathematical and algorithmic depth beyond Chowdhury.</p>
+<p><a href="https://ad-wiki.informatik.uni-freiburg.de/teaching/InformationRetrievalWS2223" target="_blank" rel="noopener noreferrer">Information Retrieval Lecture Series (University of Freiburg / Prof. Dr. Hannah Bast)</a> - A complete university video lecture series with slides and problem sets covering search engine mechanics, serving as a video-based lecture alternative to the Manning textbook.</p>
+<h3 id="reference-and-information-services">Reference and Information Services</h3>
+<p>This subject details the methods of conducting reference interviews, constructing specialized search queries, navigating reference sources, and delivering user assistance.</p>
+<p><a href="https://books.google.com/books?isbn=9781440875045" target="_blank" rel="noopener noreferrer">Reference and Information Services: An Introduction (Libraries Unlimited / Melissa A. Wong &amp; Laura Saunders, eds.)</a> - The comprehensive foundational textbook exploring reference theory, source categories, search tactics, virtual reference, and user engagement across different institutional settings.</p>
+<p>LiFT: The Reference Interview (WebJunction / Idaho Commission for Libraries) - A free interactive course (search the title on the WebJunction Course Catalog at learn.webjunction.org) that serves as an applied, scenario-based companion to Wong and Saunders, training learners in active listening and query negotiation.</p>
+<h3 id="collection-development-and-management">Collection Development and Management</h3>
+<p>This subject addresses the lifecycle of library collections, including community needs assessment, selection criteria, acquisition models, licensing, collection evaluation, and deaccessioning.</p>
+<p><a href="https://books.google.com/books?isbn=9780838916414" target="_blank" rel="noopener noreferrer">Fundamentals of Collection Development and Management (ALA Editions / Peggy Johnson)</a> - The definitive professional textbook addressing collection policies, budgeting, vendor relations, electronic resource licensing, and preservation workflows.</p>
+<p>LiFT: Collection Management Series (WebJunction / Idaho Commission for Libraries) - A free six-part self-paced course track (search the series title on the WebJunction Course Catalog at learn.webjunction.org) that serves as a practical, workflow-oriented companion to Johnson, walking learners through selection, ordering, collection assessment, and weeding.</p>
+<h3 id="library-management-and-administration">Library Management and Administration</h3>
+<p>This subject examines administrative structures, strategic planning, budgeting and financial management, organizational leadership, and facilities planning within information agencies.</p>
+<p><a href="https://books.google.com/books?isbn=9781440854477" target="_blank" rel="noopener noreferrer">Library and Information Center Management (Libraries Unlimited / Barbara B. Moran &amp; Claudia J. Morner)</a> - A standard, comprehensive textbook structuring library management around classic administrative functions, including planning, organizational design, human resources, leading, and fiscal control.</p>
+<p><a href="https://books.google.com/books?isbn=9780838918739" target="_blank" rel="noopener noreferrer">Management Basics for Information Professionals (ALA Neal-Schuman / G. Edward Evans &amp; Stacey Greenwell)</a> - An alternative comprehensive textbook to Moran and Morner covering similar administrative ground, with particular emphasis on non-profit fiscal governance, organizational culture, and legal risk management.</p>
+    </article>
+  </main>
 
 </body>
 </html>
